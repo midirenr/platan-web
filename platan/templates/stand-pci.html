@@ -1,0 +1,168 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+<title>Стенд ПСИ</title>
+{% endblock %}
+
+{% block page_name %}<div align="center">Стенд ПСИ</div>{% endblock %}
+
+{% block content-blocks %}
+
+<div class="left" id="stand-pci-left">
+
+</div>
+
+<div class="middle" id="stand-pci-middle">
+    <form method="post" id="pci-form">
+        {% csrf_token %}
+        <div id="pci-left-frame">
+            <div align="center"><b>Выберите количество устройств</b></div>
+            {{ form.board_count }}
+            <div id="board-container-1">
+                {{ form.board_serial_number_1 }}
+                <div class="errors" id="board_serial_number_1_error">{{ form.board_serial_number_1.errors.as_text }}</div>
+            </div>
+            <div id="board-container-2">
+                {{ form.board_serial_number_2 }}
+                <div class="errors" id="board_serial_number_2_error">{{ form.board_serial_number_2.errors.as_text }}</div>
+            </div>
+            <div id="board-container-3">
+                {{ form.board_serial_number_3 }}
+                <div class="errors" id="board_serial_number_3_error">{{ form.board_serial_number_3.errors.as_text }}</div>
+            </div>
+            <div id="board-container-4">
+                {{ form.board_serial_number_4 }}
+                <div class="errors" id="board_serial_number_4_error">{{ form.board_serial_number_4.errors.as_text }}</div>
+            </div>
+            <div id="board-container-5">
+                {{ form.board_serial_number_5 }}
+                <div class="errors" id="board_serial_number_5_error">{{ form.board_serial_number_5.errors.as_text }}</div>
+            </div>
+            <button type="submit" name="pci_start" id="btn_pci_start">Старт ПСИ</button>
+        </div>
+
+        <div align="center" id="pci-right-frame">
+            <b>Окно вывода</b>
+            {{ form.output }}
+        </div>
+    </form>
+</div>
+
+<div class="right" id="stand-pci-right">
+
+</div>
+
+<script>
+    function UpdateEntries() {
+        var selectedCount = $('#id_board_count').val();
+        var board_serial_number_1 = document.getElementById('id_board_serial_number_1');
+        var board_serial_number_2 = document.getElementById('id_board_serial_number_2');
+        var board_serial_number_3 = document.getElementById('id_board_serial_number_3');
+        var board_serial_number_4 = document.getElementById('id_board_serial_number_4');
+        var board_serial_number_5 = document.getElementById('id_board_serial_number_5');
+
+        if(selectedCount == 1)
+        {
+            board_serial_number_2.setAttribute('type', 'hidden');
+            board_serial_number_2.removeAttribute('required');
+            board_serial_number_3.setAttribute('type', 'hidden');
+            board_serial_number_3.removeAttribute('required');
+            board_serial_number_4.setAttribute('type', 'hidden');
+            board_serial_number_4.removeAttribute('required');
+            board_serial_number_5.setAttribute('type', 'hidden');
+            board_serial_number_5.removeAttribute('required');
+            board_serial_number_2.value = '';
+            board_serial_number_2_error.setAttribute('hidden', 'True');
+            board_serial_number_3.value = '';
+            board_serial_number_3_error.setAttribute('hidden', 'True');
+            board_serial_number_4.value = '';
+            board_serial_number_4_error.setAttribute('hidden', 'True');
+            board_serial_number_5.value = '';
+            board_serial_number_5_error.setAttribute('hidden', 'True');
+        }
+        else if(selectedCount == 2)
+        {
+            board_serial_number_2.removeAttribute('type');
+            board_serial_number_2.setAttribute('required', 'True');
+            board_serial_number_3.setAttribute('type', 'hidden');
+            board_serial_number_3.removeAttribute('required');
+            board_serial_number_4.setAttribute('type', 'hidden');
+            board_serial_number_4.removeAttribute('required');
+            board_serial_number_5.setAttribute('type', 'hidden');
+            board_serial_number_5.removeAttribute('required');
+            board_serial_number_3.value = '';
+            board_serial_number_3_error.setAttribute('hidden', 'True');
+            board_serial_number_4.value = '';
+            board_serial_number_4_error.setAttribute('hidden', 'True');
+            board_serial_number_5.value = '';
+            board_serial_number_5_error.setAttribute('hidden', 'True');
+        }
+        else if(selectedCount == 3)
+        {
+            board_serial_number_2.removeAttribute('type');
+            board_serial_number_2.setAttribute('required', 'True');
+            board_serial_number_3.removeAttribute('type');
+            board_serial_number_3.setAttribute('required', 'True');
+            board_serial_number_4.setAttribute('type', 'hidden');
+            board_serial_number_4.removeAttribute('required');
+            board_serial_number_5.setAttribute('type', 'hidden');
+            board_serial_number_5.removeAttribute('required');
+            board_serial_number_4.value = '';
+            board_serial_number_4_error.setAttribute('hidden', 'True');
+            board_serial_number_5.value = '';
+            board_serial_number_5_error.setAttribute('hidden', 'True');
+        }
+        else if(selectedCount == 4)
+        {
+            board_serial_number_2.removeAttribute('type');
+            board_serial_number_2.setAttribute('required', 'True');
+            board_serial_number_3.removeAttribute('type');
+            board_serial_number_3.setAttribute('required', 'True');
+            board_serial_number_4.removeAttribute('type');
+            board_serial_number_4.setAttribute('required', 'True');
+            board_serial_number_5.setAttribute('type', 'hidden');
+            board_serial_number_5.removeAttribute('required');
+            board_serial_number_5.value = '';
+            board_serial_number_5_error.setAttribute('hidden', 'True');
+        }
+        else if(selectedCount == 5)
+        {
+            board_serial_number_2.removeAttribute('type');
+            board_serial_number_2.setAttribute('required', 'True');
+            board_serial_number_3.removeAttribute('type');
+            board_serial_number_3.setAttribute('required', 'True');
+            board_serial_number_4.removeAttribute('type');
+            board_serial_number_4.setAttribute('required', 'True');
+            board_serial_number_5.removeAttribute('type');
+            board_serial_number_5.setAttribute('required', 'True');
+        }
+    }
+</script>
+
+<script>
+    $(document).ready(UpdateEntries);
+</script>
+
+<script>
+    $('#id_board_count').on('change', UpdateEntries);
+</script>
+
+<script>
+    function refresh_data() {
+        $.ajax({
+            url: '{% url "ajax_pci_output" %}',
+            success: function(data) {
+                $('#id_output').html(data),
+                setTimeout(refresh_data, 1000);
+            }
+        });
+    }
+
+    $(function(){
+        refresh_data();
+    });
+</script>
+
+{% endblock %}

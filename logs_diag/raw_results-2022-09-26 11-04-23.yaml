@@ -1,0 +1,740 @@
+device_num_1:
+  bootmenu_1_install:
+  - " usb start ;                 env set phy_sfp 1 ;                 dhcp ;     \
+    \            setenv serverip 192.168.1.2 ;                 setenv fdt_addr_n 0x85D00000\
+    \ ;                 setenv fdt_file_name baikal.dtb ;                 setenv initrd_addr_n\
+    \ 0x86000000 ;                 setenv initrd_file_name initrd.gz ;           \
+    \      setenv kernel_addr_n 0x80100000 ;                 setenv kernel_file_name\
+    \ vmlinux.bin ;                 setenv ci_installed 1 ;                 setenv\
+    \ bootargs console=ttyS0,115200n8 usbcore.autosuspend=-1                 ei-auto_install=true\
+    \ ei-install_disk=/dev/sda ei-passwd_admin=admin                 ei-passwd_serviceuser=serviceuser\
+    \ ei-passwd_master=NEJvjok1cywQfHBUw ;                 setenv sata_setup_disk\
+    \ \"sata init; run sata_common_disk\" ;                 saveenv ;            \
+    \     run net_load_all_tftp ; run all_bootnr\r\n(Re)start USB...\r\nUSB0:   Register\
+    \ 1000140 NbrPorts 1\r\nStarting the controller\r\nUSB XHCI 1.00\r\nscanning bus\
+    \ 0 for devices... 3 USB Device(s) found\r\n       scanning usb for storage devices...\
+    \ 1 Storage Device(s) found\r\n       scanning usb for ethernet devices... 0 Ethernet\
+    \ Device(s) found\r\ndwmac.bf05e000 Waiting for PHY auto negotiation to complete.\
+    \ done\r\nSpeed: 1000, full duplex\r\nBOOTP broadcast 1\r\nBOOTP broadcast 2\r\
+    \nBOOTP broadcast 3\r\nDHCP client bound to address 192.168.1.107 (1005 ms)\r\n\
+    Saving Environment to Flash...\r\nSF: Detected MX25U12832F with page size 256\
+    \ Bytes, erase size 64 KiB, total 16 MiB\r\nErasing SPI flash...done\r\nWriting\
+    \ to SPI flash...done\r\ndwmac.bf05e000 Waiting for PHY auto negotiation to complete.\
+    \ done\r\nSpeed: 1000, full duplex\r\nUsing dwmac.bf05e000 device\r\nTFTP from\
+    \ server 192.168.1.2; our IP address is 192.168.1.107\r\nFilename 'vmlinux.bin'.\r\
+    \nLoad address: 0x80100000\r\nLoading: *\b#"
+  error: Ошибка c устройством 1
+  error_details: !!python/tuple
+  - - Неожиданный вывод команды
+    - "ВЫВОД КОМАНДЫ: \e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e\
+      [J Install SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install sudo\n\
+      \e[19D[base] Install start-stop-daemon\n\e[32D[base] Install ssh-import-id\n\
+      \e[28D[base] Install shadow\n\e[21D[base] Install service\n\e[22D[base] Install\
+      \ sed\n\e[18D[base] Install rsyslog\n\e[22D[base] Install readline\e[16;10H\e\
+      [m\x0F      \e[16;40H\e[0;7m\x0F11\e[16;16H\e[m\x0F\e[6D\e[H\n\e[79C\e[24;1H\r\
+      \e[?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install\
+      \ SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install start-stop-daemon\n\
+      \e[32D[base] Install ssh-import-id\n\e[28D[base] Install shadow\n\e[21D[base]\
+      \ Install service\n\e[22D[base] Install sed\n\e[18D[base] Install rsyslog\n\e\
+      [22D[base] Install readline\n\e[23D[base] Install python\e[16;10H\e[m\x0F  \
+      \     \e[16;40H\e[0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e\
+      >\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM\
+      \ - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install ssh-import-id\n\
+      \e[28D[base] Install shadow\n\e[21D[base] Install service\n\e[22D[base] Install\
+      \ sed\n\e[18D[base] Install rsyslog\n\e[22D[base] Install readline\n\e[23D[base]\
+      \ Install python\n\e[21D[base] Install pth\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install shadow\n\
+      \e[21D[base] Install service\n\e[22D[base] Install sed\n\e[18D[base] Install\
+      \ rsyslog\n\e[22D[base] Install readline\n\e[23D[base] Install python\n\e[21D[base]\
+      \ Install pth\n\e[18D[base] Install psmisc\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install service\n\
+      \e[22D[base] Install sed\n\e[18D[base] Install rsyslog\n\e[22D[base] Install\
+      \ readline\n\e[23D[base] Install python\n\e[21D[base] Install pth\n\e[18D[base]\
+      \ Install psmisc\n\e[21D[base] Install popt\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install sed\n\
+      \e[18D[base] Install rsyslog\n\e[22D[base] Install readline\n\e[23D[base] Install\
+      \ python\n\e[21D[base] Install pth\n\e[18D[base] Install psmisc\n\e[21D[base]\
+      \ Install popt\n\e[19D[base] Install pcre\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install rsyslog\n\
+      \e[22D[base] Install readline\n\e[23D[base] Install python\n\e[21D[base] Install\
+      \ pth\n\e[18D[base] Install psmisc\n\e[21D[base] Install popt\n\e[19D[base]\
+      \ Install pcre\n\e[19D[base] Install pciutils\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install readline\n\
+      \e[23D[base] Install python\n\e[21D[base] Install pth\n\e[18D[base] Install\
+      \ psmisc\n\e[21D[base] Install popt\n\e[19D[base] Install pcre\n\e[19D[base]\
+      \ Install pciutils\n\e[23D[base] Install pam\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install python\n\
+      \e[21D[base] Install pth\n\e[18D[base] Install psmisc\n\e[21D[base] Install\
+      \ popt\n\e[19D[base] Install pcre\n\e[19D[base] Install pciutils\n\e[23D[base]\
+      \ Install pam\n\e[18D[base] Install p11-kit\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install pth\n\
+      \e[18D[base] Install psmisc\n\e[21D[base] Install popt\n\e[19D[base] Install\
+      \ pcre\n\e[19D[base] Install pciutils\n\e[23D[base] Install pam\n\e[18D[base]\
+      \ Install p11-kit\n\e[22D[base] Install opkg\e[16;10H\e[m\x0F       \e[16;40H\e\
+      [0;7m\x0F12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e\
+      [m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\
+      \n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install psmisc\n\
+      \e[21D[base] Install popt\n\e[19D[base] Install pcre\n\e[19D[base] Install pciutils\n\
+      \e[23D[base] Install pam\n\e[18D[base] Install p11-kit\n\e[22D[base] Install\
+      \ opkg\n\e[19D[base] Install openssl\e[16;10H\e[m\x0F       \e[16;40H\e[0;7m\x0F\
+      12\e[16;17H\e[m\x0F\e[7D\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\
+      \e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install progress\r\n\
+      \ \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install popt\n\
+      \e[19D[base] Install pcre\n\e[19D[base] Install pciutils\n\e[23D[base] Install\
+      \ pam\n\e[18D[base] Install p11-kit\n\e[22D[base] Install opkg\n\e[19D[base]\
+      \ Install openssl\n\e[22D[base] Install ntfs-3g\e[16;10H\e[m\x0F        \e[16;40H\e\
+      [0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e[?1l\e>show version\r\
+      \n\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM\
+      \ - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install pcre\n\
+      \e[19D[base] Install pciutils\n\e[23D[base] Install pam\n\e[18D[base] Install\
+      \ p11-kit\n\e[22D[base] Install opkg\n\e[19D[base] Install openssl\n\e[22D[base]\
+      \ Install ntfs-3g\n\e[22D[base] Install nettle\e[16;10H\e[m\x0F        \e[16;40H\e\
+      [0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e\
+      [1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install\
+      \ progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install pciutils\n\
+      \e[23D[base] Install pam\n\e[18D[base] Install p11-kit\n\e[22D[base] Install\
+      \ opkg\n\e[19D[base] Install openssl\n\e[22D[base] Install ntfs-3g\n\e[22D[base]\
+      \ Install nettle\n\e[21D[base] Install netbase\e[16;10H\e[m\x0F        \e[16;40H\e\
+      [0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e\
+      [1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install\
+      \ progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install pam\n\
+      \e[18D[base] Install p11-kit\n\e[22D[base] Install opkg\n\e[19D[base] Install\
+      \ openssl\n\e[22D[base] Install ntfs-3g\n\e[22D[base] Install nettle\n\e[21D[base]\
+      \ Install netbase\n\e[22D[base] Install ncurses\e[16;10H\e[m\x0F        \e[16;40H\e\
+      [0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e\
+      [1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install\
+      \ progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install p11-kit\n\
+      \e[22D[base] Install opkg\n\e[19D[base] Install openssl\n\e[22D[base] Install\
+      \ ntfs-3g\n\e[22D[base] Install nettle\n\e[21D[base] Install netbase\n\e[22D[base]\
+      \ Install ncurses\n\e[22D[base] Install nano\e[16;10H\e[m\x0F        \e[16;40H\e\
+      [0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e\
+      [1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install\
+      \ progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install opkg\n\
+      \e[19D[base] Install openssl\n\e[22D[base] Install ntfs-3g\n\e[22D[base] Install\
+      \ nettle\n\e[21D[base] Install netbase\n\e[22D[base] Install ncurses\n\e[22D[base]\
+      \ Install nano\n\e[19D[base] Install mountall\e[16;10H\e[m\x0F        \e[16;40H\e\
+      [0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e[?1l\e>\e(B\e)0\e\
+      [1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM - Install\
+      \ progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install openssl\n\
+      \e[22D[base] Install ntfs-3g\n\e[22D[base] Install nettle\n\e[21D[base] Install\
+      \ netbase\n\e[22D[base] Install ncurses\n\e[22D[base] Install nano\n\e[19D[base]\
+      \ Install mountall\n\e[23D[base] Install module-init-tools\e[16;10H\e[m\x0F\
+      \        \e[16;40H\e[0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\
+      \e[?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install\
+      \ SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install ntfs-3g\n\
+      \e[22D[base] Install nettle\n\e[21D[base] Install netbase\n\e[22D[base] Install\
+      \ ncurses\n\e[22D[base] Install nano\n\e[19D[base] Install mountall\n\e[23D[base]\
+      \ Install module-init-tools\n\e[32D[base] Install makedev\e[16;10H\e[m\x0F \
+      \       \e[16;40H\e[0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\
+      \e[?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install\
+      \ SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install nettle\n\
+      \e[21D[base] Install netbase\n\e[22D[base] Install ncurses\n\e[22D[base] Install\
+      \ nano\n\e[19D[base] Install mountall\n\e[23D[base] Install module-init-tools\n\
+      \e[32D[base] Install makedev\n\e[22D[base] Install lsof\e[16;10H\e[m\x0F   \
+      \     \e[16;40H\e[0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\
+      \e[?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install\
+      \ SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install netbase\n\
+      \e[22D[base] Install ncurses\n\e[22D[base] Install nano\n\e[19D[base] Install\
+      \ mountall\n\e[23D[base] Install module-init-tools\n\e[32D[base] Install makedev\n\
+      \e[22D[base] Install lsof\n\e[19D[base] Install lshw\e[16;10H\e[m\x0F      \
+      \  \e[16;40H\e[0;7m\x0F13\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e\
+      [?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install\
+      \ SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install ncurses\n\
+      \e[22D[base] Install nano\n\e[19D[base] Install mountall\n\e[23D[base] Install\
+      \ module-init-tools\n\e[32D[base] Install makedev\n\e[22D[base] Install lsof\n\
+      \e[19D[base] Install lshw\n\e[19D[base] Install lsb\e[16;10H\e[m\x0F       \
+      \ \e[16;40H\e[0;7m\x0F14\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e[?1l\e\
+      >\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install SYSTEM\
+      \ - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install nano\n\
+      \e[19D[base] Install mountall\n\e[23D[base] Install module-init-tools\n\e[32D[base]\
+      \ Install makedev\n\e[22D[base] Install lsof\n\e[19D[base] Install lshw\n\e\
+      [19D[base] Install lsb\n\e[18D[base] Install logrotate\e[16;10H\e[m\x0F    \
+      \    \e[16;40H\e[0;7m\x0F14\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e\
+      [?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install\
+      \ SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install mountall\n\
+      \e[23D[base] Install module-init-tools\n\e[32D[base] Install makedev\n\e[22D[base]\
+      \ Install lsof\n\e[19D[base] Install lshw\n\e[19D[base] Install lsb\n\e[18D[base]\
+      \ Install logrotate\n\e[24D[base] Install lockfile-progs\e[16;10H\e[m\x0F  \
+      \      \e[16;40H\e[0;7m\x0F14\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\
+      \e[?1l\e>\e(B\e)0\e[1;24r\e[m\x0F\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[H\e[J Install\
+      \ SYSTEM - Install progress\r\n \e[0m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0F\
+      \n\n\n\n\e[74D\e[0m\x0E\e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\e[0;7m\x0FInstalling\e\
+      [0;7m\x0Eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F              \
+      \                                                      \e[0;7m\x0Ex\x0F\e[m\x0F\
+      \n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                                            \
+      \                        \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \                                                                    \e[0;7m\x0E\
+      x\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F                               \
+      \                                     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0E\
+      x\e[0;7m\x0F                                                               \
+      \     \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0E\
+      x\e[0;7m\x0F                               0%                             \e\
+      [0;7m\x0Ex\e[0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Ex\e[0;7m\x0F\
+      \  \e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\e\
+      [0;7m\x0F  \e[0;7m\x0Ex\x0F\e[m\x0F\n\e[70D\e[0;7m\x0Emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0F\
+      \e[m\x0F\e[16;10H\e[0;7m\x0E\x0F\e[m\x0F\e[9A\b\b\e[0;7m\x0F[base] Install module-init-tools\n\
+      \e[32D[base] Install makedev\n\e[22D[base] Install lsof\n\e[19D[base] Install\
+      \ lshw\n\e[19D[base] Install lsb\n\e[18D[base] Install logrotate\n\e[24D[base]\
+      \ Install lockfile-progs\n\e[29D[base] Install libxml2\e[16;10H\e[m\x0F    \
+      \    \e[16;40H\e[0;7m\x0F14\e[16;18H\e[m\x0F\e[16;10H\e[H\n\e[79C\e[24;1H\r\e\
+      [?1l\e>"
+    - '202'
+  sata_info: " sata init\r\nAHCI 0001.0300 32 slots 2 ports 6 Gbps 0x3 impl SATA mode\r\
+    \nflags: ncq stag pm led clo only pmp pio slum part \r\nSATA Device Info:\r\n\r\
+    S/N: 20201027AA100541411A\r\n\rProduct model number: nanoSSD 3ME3\r\n\rFirmware\
+    \ version: S17411\r\n\rCapacity: 31277232 sectors\r\n\rBAIKAL #"
+  sn: RS102001180001
+  start_installing_sw: "\r\n"
+  uboot_prompt: !!python/tuple
+  - ":  0 \r\n\e[?25l\e[2J\e[1;1H\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 1\e[0K\e[10;1H\e[2K\e[4;1H     \e[7mNormal boot\e[0m\e[5;1H     Install\
+    \ software\e[6;1H     U-Boot console\e[8;1H  Hit any key to stop autoboot menu\
+    \ entry  1:  3\e[8;1H\e[2K\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e[0K\e\
+    [3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu entry\
+    \ 2\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     \e[7mInstall software\e\
+    [0m\e[6;1H     U-Boot console\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 3\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     Install software\e\
+    [6;1H     \e[7mU-Boot console\e[0m\e[?25h\e[2J\e[1;1HBAIKAL # "
+  - "\r\n\r\nU-Boot 2014.10-gb85c2d1-dirty / SDK 4.18 (Oct 13 2021 - 13:44:18)\r\n\
+    \r\nCPU:   MIPS32 P5600 @ 1200 MHz (Rev 1.0)\r\nFPU:   Present\r\nCores: 2 (running\
+    \ on CPU0)\r\nTimer: 600 MHz\r\nECC:   L1 L2 (80800770)\r\nPLLs:  CPU: 1200MHz\
+    \  SATA: 600MHz  ETH:1250MHz\r\n       PCIE:1200MHz  DDR3: 400MHz  AXI: 600MHz\r\
+    \nBoard: Baikal-T1 RT1MB\r\n       Watchdog enabled\r\nI2C:   ready\r\nDRAM: \
+    \ Static SPD, Ranks = 1, highmem = 1792 MiB (1792 MiB below 4G)\r\nDBG_OUT: Config\
+    \ register 0 value:0x80040603\r\nDBG_OUT: Config register 1 value:0xFEE3719B\r\
+    \nDBG_OUT: Config register 2 value:0x80000647\r\nDBG_OUT: Config register 3 value:0xBF8032A9\r\
+    \nDBG_OUT: Config register 4 value:0xC01CC127\r\nDBG_OUT: Config register 5 value:0x10000038\r\
+    \nDBG_OUT: Config register 6 value:0x00008000\r\nDBG: Memory testing ........................\r\
+    \nDBG: memtest(): crc=0xCDA65D4A, eval_crc=0x0000A706, immediate_stop=-799884904,\r\
+    \niteration_count=-572701400, start_add=0x07BD59CE, stop_addr=0x2B41D61C\r\nDRAM:\
+    \ lowmem = 128 MiB\r\nPOST memory PASSED\r\nMIPS:  SIMD ready\r\nMIPS:  Write\
+    \ Merge enable\r\nMIPS:  MAAR[0]: 0x00010000-0x07ffffff speculate\r\nARCH:  CPU\
+    \ core freq is set to 1200MHz\r\nIn:    serial\r\nOut:   serial\r\nErr:   serial\r\
+    \nNet:   DBG: phy_marvell_init\r\ndwmac.bf05e000, dwmac.bf060000\r\nHit any key\
+    \ to stop autoboot"

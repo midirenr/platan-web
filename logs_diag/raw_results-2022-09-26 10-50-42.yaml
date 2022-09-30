@@ -1,0 +1,249 @@
+device_num_1:
+  bootmenu_1_install:
+  - " usb start ;                 dhcp ;                 setenv serverip 192.168.1.2\
+    \ ;                 setenv fdt_addr_n 0x85D00000 ;                 setenv fdt_file_name\
+    \ baikal.dtb ;                 setenv initrd_addr_n 0x86000000 ;             \
+    \    setenv initrd_file_name initrd.gz ;                 setenv kernel_addr_n\
+    \ 0x80100000 ;                 setenv kernel_file_name vmlinux.bin ;         \
+    \        setenv bootargs console=ttyS0,115200n8 usbcore.autosuspend=-1       \
+    \          ei-auto_install=true ei-install_disk=/dev/sda ei-passwd_admin=admin\
+    \                 ei-passwd_serviceuser=serviceuser ei-passwd_master=NEJvjok1cywQfHBUw\
+    \ ;                 saveenv ;                 run net_load_all_tftp ; run all_bootnr\r\
+    \n(Re)start USB...\r\nUSB0:   Register 1000140 NbrPorts 1\r\nStarting the controller\r\
+    \nUSB XHCI 1.00\r\nscanning bus 0 for devices... 1 USB Device(s) found\r\n   \
+    \    scanning usb for storage devices... 0 Storage Device(s) found\r\ndwmac.bf05e000\
+    \ Waiting for PHY auto negotiation to complete. done\r\nSpeed: 1000, full duplex\r\
+    \nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\nBOOTP broadcast 1\r\nBOOTP broadcast\
+    \ 2\r\nBOOTP broadcast 3\r\nBOOTP broadcast 4\r\nBOOTP broadcast 5\r\nBOOTP broadcast\
+    \ 6\r\nDHCP client bound to address 192.168.1.107 (6763 ms)\r\nSaving Environment\
+    \ to Flash...\r\ndwmac.bf05e000 Waiting for PHY auto negotiation to complete.\
+    \ done\r\nSpeed: 1000, full duplex\r\nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\
+    \nUsing dwmac.bf05e000 device\r\nTFTP from server 192.168.1.2; our IP address\
+    \ is 192.168.1.107\r\nFilename 'vmlinux.bin'.\r\nLoad address: 0x80100000\r\n\
+    Loading: *\bT T #"
+  error: Ошибка c устройством 1
+  error_details: !!python/tuple
+  - - 'Не удалось обнаружить флешку с LABEL: INSTALLER'
+    - "ВЫВОД В КОНСОЛЬ: ############################################################\r\
+      \n\t 1.9 MiB/s\r\ndone\r\nBytes transferred = 8918528 (881600 hex)\r\ndwmac.bf05e000\
+      \ Waiting for PHY auto negotiation to complete. done\r\nSpeed: 1000, full duplex\r\
+      \nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\nUsing dwmac.bf05e000 device\r\
+      \nTFTP from server 192.168.1.2; our IP address is 192.168.1.107\r\nFilename\
+      \ 'initrd.gz'.\r\nLoad address: 0x86000000\r\nLoading: *\bT T T ###################################################\r\
+      \n\t 1.1 MiB/s\r\ndone\r\nBytes transferred = 7436901 (717a65 hex)\r\ndwmac.bf05e000\
+      \ Waiting for PHY auto negotiation to complete. done\r\nSpeed: 1000, full duplex\r\
+      \nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\nUsing dwmac.bf05e000 device\r\
+      \nTFTP from server 192.168.1.2; our IP address is 192.168.1.107\r\nFilename\
+      \ 'baikal.dtb'.\r\nLoad address: 0x85d00000\r\nLoading: *\bT T T #\r\n\t 2.9\
+      \ KiB/s\r\ndone\r\nBytes transferred = 18105 (46b9 hex)\r\n   Loading Device\
+      \ Tree to 87de6000, end 87e28fff ... OK\r\n\r\nStarting kernel ...\r\n\r\nInitializing\
+      \ cgroup subsys cpuset\r\nInitializing cgroup subsys cpu\r\nInitializing cgroup\
+      \ subsys cpuacct\r\nLinux version 4.4.165-bfkx-00140-g1d59a08-dirty (root@installer-builder)\
+      \ (gcc version 4.8.5 (GCC) ) #1 SMP Wed Jun 5 11:56:39 MSK 2019\r\nEnable data\
+      \ prefetch\r\nEnable instruction prefetch\r\nbootconsole [early0] enabled\r\n\
+      CPU0 revision is: 0001a830 (MIPS P5600)\r\nFPU revision is: 30f30320\r\nMSA\
+      \ revision is: 00000320\r\nMachine device tree at: 0x87de6000\r\nDetermined\
+      \ physical RAM map:\r\n memory: 08000000 @ 00000000 (usable)\r\n memory: 70000000\
+      \ @ 20000000 (usable)\r\nInitial ramdisk at: 0x86000000 (7436901 bytes)\r\n\
+      MIPS: machine is Baikal-T1 BFKX evaluation board\r\nZone ranges:\r\n  DMA  \
+      \    [mem 0x0000000000000000-0x0000000001ffffff]\r\n  Normal   [mem 0x0000000002000000-0x000000001fffffff]\r\
+      \n  HighMem  [mem 0x0000000020000000-0x000000008fffffff]\r\nMovable zone start\
+      \ for each node\r\nEarly memory node ranges\r\n  node   0: [mem 0x0000000000000000-0x0000000007ffffff]\r\
+      \n  node   0: [mem 0x0000000020000000-0x000000008fffffff]\r\nInitmem setup node\
+      \ 0 [mem 0x0000000000000000-0x000000008fffffff]\r\nReserving 0MB of memory at\
+      \ 0MB for crashkernel\r\nVPE topology {1,1} total 2\r\nPrimary instruction cache\
+      \ 64kB, VIPT, 4-way, linesize 32 bytes.\r\nPrimary data cache 64kB, 4-way, PIPT,\
+      \ no aliases, linesize 32 bytes\r\nMIPS secondary cache 1024kB, 8-way, linesize\
+      \ 32 bytes.\r\nPERCPU: Embedded 11 pages/cpu @8345f000 s13824 r8192 d23040 u45056\r\
+      \nBuilt 1 zonelists in Zone order, mobility grouping on.  Total pages: 490368\r\
+      \nKernel command line: console=ttyS0,115200n8 usbcore.autosuspend=-1 ei-auto_install=true\
+      \ ei-install_disk=/dev/sda ei-passwd_admin=admin ei-passwd_serviceuser=serviceuser\
+      \ ei-passwd_master=NEJvjok1cywQfHBUw\r\nPID hash table entries: 512 (order:\
+      \ -1, 2048 bytes)\r\nDentry cache hash table entries: 16384 (order: 4, 65536\
+      \ bytes)\r\nInode-cache hash table entries: 8192 (order: 3, 32768 bytes)\r\n\
+      Writing ErrCtl register=80000280\r\nReadback ErrCtl register=80000280\r\nCache\
+      \ parity protection enabled\r\nL2 cache parity protection enabled\r\nMAAR configuration:\r\
+      \n  [0]: 0x00000000-0x07ffffff speculate maarvh = 0x0\r\n  [1]: 0x20000000-0x8fffffff\
+      \ speculate maarvh = 0x0\r\n  [2]: disabled\r\nMemory: 1927764K/1966080K available\
+      \ (6753K kernel code, 245K rwdata, 1448K rodata, 312K init, 187K bss, 38316K\
+      \ reserved, 0K cma-reserved, 1835008K highmem)\r\nSLUB: HWalign=32, Order=0-3,\
+      \ MinObjects=0, CPUs=2, Nodes=1\r\nHierarchical RCU implementation.\r\nNR_IRQS:255\r\
+      \n\tOffload RCU callbacks from all CPUs\r\n\tOffload RCU callbacks from CPUs:\
+      \ 0-1.\r\nclocksource: GIC: mask: 0xffffffffffffffff max_cycles: 0x114c1bbbeec,\
+      \ max_idle_ns: 440795229572 ns\r\nclocksource: timer1: mask: 0xffffffff max_cycles:\
+      \ 0xffffffff, max_idle_ns: 76450417870 ns\r\nsched_clock: 32 bits at 25MHz,\
+      \ resolution 40ns, wraps every 85899345900ns\r\nCPU timer frequency: 1200 MHz\r\
+      \nConsole: colour dummy device 80x25\r\nCalibrating delay loop... 1196.85 BogoMIPS\
+      \ (lpj=5984256)\r\npid_max: default: 32768 minimum: 301\r\nMount-cache hash\
+      \ table entries: 1024 (order: 0, 4096 bytes)\r\nMountpoint-cache hash table\
+      \ entries: 1024 (order: 0, 4096 bytes)\r\nInitializing cgroup subsys io\r\n\
+      Initializing cgroup subsys memory\r\nInitializing cgroup subsys devices\r\n\
+      Initializing cgroup subsys freezer\r\nInitializing cgroup subsys perf_event\r\
+      \nInitializing cgroup subsys pids\r\nPerformance counters: mips/P5600 PMU enabled,\
+      \ 4 32-bit counters available to each CPU, irq 3\r\nPrimary instruction cache\
+      \ 64kB, VIPT, 4-way, linesize 32 bytes.\r\nPrimary data cache 64kB, 4-way, PIPT,\
+      \ no aliases, linesize 32 bytes\r\nMIPS secondary cache 1024kB, 8-way, linesize\
+      \ 32 bytes.\r\nCPU1 revision is: 0001a830 (MIPS P5600)\r\nFPU revision is: 30f30320\r\
+      \nMSA revision is: 00000320\r\nBrought up 2 CPUs\r\ndevtmpfs: initialized\r\n\
+      clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns:\
+      \ 19112604462750000 ns\r\nfutex hash table entries: 512 (order: 2, 16384 bytes)\r\
+      \nxor: measuring software checksum speed\r\n   8regs     :  1522.400 MB/sec\r\
+      \n   8regs_prefetch:  1401.200 MB/sec\r\n   32regs    :  1656.400 MB/sec\r\n\
+      \   32regs_prefetch:  1542.800 MB/sec\r\nxor: using function: 32regs (1656.400\
+      \ MB/sec)\r\nNET: Registered protocol family 16\r\nraid6: int32x1  gen()   372\
+      \ MB/s\r\nraid6: int32x1  xor()   256 MB/s\r\nraid6: int32x2  gen()   414 MB/s\r\
+      \nraid6: int32x2  xor()   263 MB/s\r\nraid6: int32x4  gen()   429 MB/s\r\nraid6:\
+      \ int32x4  xor()   280 MB/s\r\nraid6: int32x8  gen()   366 MB/s\r\nraid6: int32x8\
+      \  xor()   267 MB/s\r\nraid6: using algorithm int32x4 gen() 429 MB/s\r\nraid6:\
+      \ .... xor() 280 MB/s, rmw enabled\r\nraid6: using intx1 recovery algorithm\r\
+      \ncdmm0 discovery (3 blocks)\r\ncdmm0-0: @0 (0x0..0xbf), type 0xfd, rev 0\r\n\
+      cdmm1 discovery (3 blocks)\r\ncdmm1-0: @0 (0x0..0xbf), type 0xfd, rev 0\r\n\
+      dw_dmac 1f041000.dma: DesignWare DMA Controller, 2 channels\r\nvgaarb: loaded\r\
+      \nSCSI subsystem initialized\r\nusbcore: registered new interface driver usbfs\r\
+      \nusbcore: registered new interface driver hub\r\nusbcore: registered new device\
+      \ driver usb\r\npps_core: LinuxPPS API ver. 1 registered\r\npps_core: Software\
+      \ ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>\r\n\
+      PTP clock support registered\r\nclocksource: Switched to clocksource GIC\r\n\
+      NET: Registered protocol family 2\r\nTCP established hash table entries: 1024\
+      \ (order: 0, 4096 bytes)\r\nTCP bind hash table entries: 1024 (order: 1, 8192\
+      \ bytes)\r\nTCP: Hash tables configured (established 1024 bind 1024)\r\nUDP\
+      \ hash table entries: 256 (order: 1, 8192 bytes)\r\nUDP-Lite hash table entries:\
+      \ 256 (order: 1, 8192 bytes)\r\nNET: Registered protocol family 1\r\nTrying\
+      \ to unpack rootfs image as initramfs...\r\nFreeing initrd memory: 7260K\r\n\
+      be-apb 1f059000.apb_ehb: Baikal Peripheral Bus Error handler\r\nbe-apb 1f059000.apb_ehb:\
+      \ Version 1.02\r\nbe-axi 1f04d110.axi_ehb: Baikal Interconnect Error handler\r\
+      \nbe-axi 1f04d110.axi_ehb: Version 1.02\r\nbe-emc 1f042000.emc: Baikal Extended\
+      \ Memory controller\r\nbe-emc 1f042000.emc: Version 1.01\r\nbe-emc 1f042000.emc:\
+      \ DDR3 ranks:1 ecc:off burst:16 bus:DQ/1 timing:1T bchop:0 bmode:0\r\nbe-wdt\
+      \ gic_wdt: Baikal Electronics GIC Watchdog Driver\r\nbe-wdt gic_wdt: Version\
+      \ 1.01\r\nbe-wdt gic_wdt: Mode: Programm Interval Timer\r\nbe-bc 1f040000.bc:\
+      \ Baikal Electronics Boot Controller Driver\r\nbe-bc 1f040000.bc: VID: 0x0000abf0,\
+      \ DRID: 0x00100013\r\nbe-bc 1f040000.bc: Version 1.02\r\nbaikal_efuse 1f201000.efuse:\
+      \ Baikal Efuse Driver\r\nbaikal_efuse 1f201000.efuse: Version 1.00\r\naudit:\
+      \ initializing netlink subsys (disabled)\r\naudit: type=2000 audit(2.669:1):\
+      \ initialized\r\nfuse init (API version 7.23)\r\nasync_tx: api initialized (async)\r\
+      \nbounce: pool size: 64 pages\r\nBlock layer SCSI generic (bsg) driver version\
+      \ 0.4 loaded (major 249)\r\nio scheduler noop registered\r\nio scheduler deadline\
+      \ registered\r\nio scheduler cfq registered (default)\r\nSerial: 8250/16550\
+      \ driver, 2 ports, IRQ sharing disabled\r\nconsole [ttyS0] disabled\r\n1f04a000.serial0:\
+      \ ttyS0 at MMIO 0x1f04a000 (irq = 55, base_baud = 459558) is a 16550A\r\nconsole\
+      \ [ttyS0] enabled\r\nconsole [ttyS0] enabled\r\nbootconsole [early0] disabled\r\
+      \nbootconsole [early0] disabled\r\n1f04b000.serial1: ttyS1 at MMIO 0x1f04b000\
+      \ (irq = 56, base_baud = 459558) is a 16550A\r\n[drm] Initialized drm 1.1.0\
+      \ 20060810\r\nbrd: module loaded\r\nloop: module loaded\r\nnbd: registered device\
+      \ at major 43\r\nat24 0-0050: 256 byte 24c02 EEPROM, writable, 16 bytes/write\r\
+      \nat24 1-0050: 256 byte 24c02 EEPROM, writable, 16 bytes/write\r\nat24 1-0051:\
+      \ 256 byte 24c02 EEPROM, writable, 16 bytes/write\r\nahci 1f050000.sata: SSS\
+      \ flag set, parallel bus scan disabled\r\nahci 1f050000.sata: AHCI 0001.0300\
+      \ 32 slots 2 ports 6 Gbps 0x3 impl platform mode\r\nahci 1f050000.sata: flags:\
+      \ ncq sntf stag pm led clo only pmp fbs pio slum part ccc apst \r\nahci 1f050000.sata:\
+      \ port 0 is not capable of FBS\r\nahci 1f050000.sata: port 1 is not capable\
+      \ of FBS\r\nscsi host0: ahci\r\nscsi host1: ahci\r\nata1: SATA max UDMA/133\
+      \ mmio [mem 0x1f050000-0x1f051fff] port 0x100 irq 71\r\nata2: SATA max UDMA/133\
+      \ mmio [mem 0x1f050000-0x1f051fff] port 0x180 irq 71\r\nm25p80 spi0.0: unrecognized\
+      \ JEDEC id bytes: ff, ff, ff\r\nm25p80 spi0.1: unrecognized JEDEC id bytes:\
+      \ ff, ff, ff\r\ndw_spi_mmio_dma 1f04f000.spi1: DMA init failed\r\nm25p80 spi2.0:\
+      \ unrecognized JEDEC id bytes: c2, 25, 38\r\nm25p80: probe of spi2.0 failed\
+      \ with error -2\r\nlibphy: Baikal GPIO MDIO bus: probed\r\nbe-mdio be-mdio:\
+      \ MDIO ptr=81d10c00\r\nbe-mdio be-mdio: Baikal Electronics mezzanine card MDIO\
+      \ bus driver\r\nbe-mdio be-mdio: Version: 1.04a\r\nbe-xgbe 1f054000.eth0 eth0:\
+      \ net device enabled\r\ndwc3 1f100000.dwc3: failed to register ULPI interface\r\
+      \ndwc3: probe of 1f100000.dwc3 failed with error -145\r\nohci_hcd: USB 1.1 'Open'\
+      \ Host Controller (OHCI) Driver\r\nohci-pci: OHCI PCI platform driver\r\nohci-platform:\
+      \ OHCI generic platform driver\r\nxhci-hcd 1f100000.dwc3: xHCI Host Controller\r\
+      \nxhci-hcd 1f100000.dwc3: new USB bus registered, assigned bus number 1\r\n\
+      xhci-hcd 1f100000.dwc3: hcc params 0x0220f664 hci version 0x100 quirks 0x00010010\r\
+      \nxhci-hcd 1f100000.dwc3: irq 75, io mem 0x1f100000\r\nusb usb1: New USB device\
+      \ found, idVendor=1d6b, idProduct=0002\r\nusb usb1: New USB device strings:\
+      \ Mfr=3, Product=2, SerialNumber=1\r\nusb usb1: Product: xHCI Host Controller\r\
+      \nusb usb1: Manufacturer: Linux 4.4.165-bfkx-00140-g1d59a08-dirty xhci-hcd\r\
+      \nusb usb1: SerialNumber: 1f100000.dwc3\r\nhub 1-0:1.0: USB hub found\r\nhub\
+      \ 1-0:1.0: 1 port detected\r\nxhci-hcd 1f100000.dwc3: xHCI Host Controller\r\
+      \nxhci-hcd 1f100000.dwc3: new USB bus registered, assigned bus number 2\r\n\
+      usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.\r\
+      \nusb usb2: New USB device found, idVendor=1d6b, idProduct=0003\r\nusb usb2:\
+      \ New USB device strings: Mfr=3, Product=2, SerialNumber=1\r\nusb usb2: Product:\
+      \ xHCI Host Controller\r\nusb usb2: Manufacturer: Linux 4.4.165-bfkx-00140-g1d59a08-dirty\
+      \ xhci-hcd\r\nusb usb2: SerialNumber: 1f100000.dwc3\r\nhub 2-0:1.0: USB hub\
+      \ found\r\nhub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)\r\
+      \nusbcore: registered new interface driver cdc_wdm\r\nusbcore: registered new\
+      \ interface driver uas\r\nusbcore: registered new interface driver usb-storage\r\
+      \nata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)\r\nata1.00: ATA-8:\
+      \ nanoSSD 3ME3, S17411, max UDMA/133\r\nata1.00: 31277232 sectors, multi 1:\
+      \ LBA48 NCQ (depth 31/32)\r\nata1.00: configured for UDMA/133\r\nscsi 0:0:0:0:\
+      \ Direct-Access     ATA      nanoSSD 3ME3     11   PQ: 0 ANSI: 5\r\nsd 0:0:0:0:\
+      \ [sda] 31277232 512-byte logical blocks: (16.0 GB/14.9 GiB)\r\nsd 0:0:0:0:\
+      \ [sda] Write Protect is off\r\nsd 0:0:0:0: [sda] Write cache: enabled, read\
+      \ cache: enabled, doesn't support DPO or FUA\r\ni8042: i8042 controller selftest\
+      \ timeout\r\nsd 0:0:0:0: Attached scsi generic sg0 type 0\r\nmousedev: PS/2\
+      \ mouse device common for all mice\r\nrtc-ab-eoz9-s3 1-0056: abeoz9s3_i2c_validate_client:\
+      \ could not read register 0\r\nsd 0:0:0:0: [sda] Attached SCSI disk\r\nrtc-ab-eoz9-s3:\
+      \ probe of 1-0056 failed with error -5\r\ni2c /dev entries driver\r\nmd: linear\
+      \ personality registered for level -1\r\nmd: raid0 personality registered for\
+      \ level 0\r\nmd: raid1 personality registered for level 1\r\nmd: raid10 personality\
+      \ registered for level 10\r\nmd: raid6 personality registered for level 6\r\n\
+      md: raid5 personality registered for level 5\r\nmd: raid4 personality registered\
+      \ for level 4\r\nmd: multipath personality registered for level -4\r\nmd: faulty\
+      \ personality registered for level -5\r\ndevice-mapper: uevent: version 1.0.3\r\
+      \ndevice-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com\r\
+      \ndevice-mapper: multipath: version 1.10.0 loaded\r\ndevice-mapper: multipath\
+      \ round-robin: version 1.0.0 loaded\r\ndevice-mapper: multipath queue-length:\
+      \ version 0.1.0 loaded\r\ndevice-mapper: multipath service-time: version 0.2.0\
+      \ loaded\r\ndevice-mapper: dm-log-userspace: version 1.3.0 loaded\r\ndevice-mapper:\
+      \ raid: Loading target version 1.7.0\r\ndevice-mapper: cache cleaner: version\
+      \ 1.0.0 loaded\r\nbe-cpufreq 1f04d000.cpufreq: 1200000 KHz --> 1500000 KHz\r\
+      \nclocksource: Switched to clocksource timer1\r\nclocksource: GIC: mask: 0xffffffffffffffff\
+      \ max_cycles: 0x159f22938a9, max_idle_ns: 440795218881 ns\r\nclocksource: Switched\
+      \ to clocksource GIC\r\nbe-cpufreq 1f04d000.cpufreq: Frequency changing procedure\
+      \ completed\r\nusbcore: registered new interface driver usbhid\r\nusbhid: USB\
+      \ HID core driver\r\nno options.\r\ndw_pci 1f052000.pci: DW PCIe driver successfully\
+      \ loaded.\r\ndw_pci 1f052000.pci: MSI IRQ:95   AER IRQ:96\r\nNET: Registered\
+      \ protocol family 17\r\nKey type dns_resolver registered\r\ndw_pcie_init: DEV_ID_VEND_ID=0x80601d39\
+      \ CLASS_CODE_REV_ID=0x1\r\nata2: SATA link down (SStatus 0 SControl 300)\r\n\
+      dw_pcie_init: PCIe error code = 0x1c0\r\nmips_pcibios_init: Init DW PCI controller\
+      \ failed\r\nCMP IOCU detected\r\nHardware DMA cache coherency disabled\r\nhctosys:\
+      \ unable to open rtc device (rtc0)\r\nttyS0 - failed to request DMA\r\nFreeing\
+      \ unused kernel memory: 312K\r\n                              Installer ver.\
+      \ 1.0.0                              \r\n--------------------------------------------------------------------------------\r\
+      \n * Mount virtual file systems.............................................[OK]\r\
+      \n * Setting kernel variables...............................................[OK]\r\
+      \n * Load kernel modules....................................................[OK]\r\
+      \n * Run logger daemons.....................................................[OK]\r\
+      \nfindfs: Unable to resolve 'LABEL=INSTALLER'\r\nError: Install disk with label:\
+      \ INSTALLER not found\r\nPress Enter to continue ..\r\n"
+    - '403'
+  sata_info: " sata init\r\nAHCI 0001.0300 32 slots 2 ports 6 Gbps 0x3 impl SATA mode\r\
+    \nflags: ncq stag pm led clo only pmp pio slum part \r\nSATA Device Info:\r\n\r\
+    S/N: 20201027AA100540F106\r\n\rProduct model number: nanoSSD 3ME3\r\n\rFirmware\
+    \ version: S17411\r\n\rCapacity: 31277232 sectors\r\n\rBAIKAL #"
+  sn: RS202001190001
+  uboot_prompt: !!python/tuple
+  - ":  0 \r\n\e[?25l\e[2J\e[1;1H\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 1\e[0K\e[10;1H\e[2K\e[4;1H     \e[7mNormal boot\e[0m\e[5;1H     Install\
+    \ software\e[6;1H     U-Boot console\e[8;1H  Hit any key to stop autoboot menu\
+    \ entry  1:  3\e[8;1H\e[2K\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e[0K\e\
+    [3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu entry\
+    \ 2\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     \e[7mInstall software\e\
+    [0m\e[6;1H     U-Boot console\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 3\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     Install software\e\
+    [6;1H     \e[7mU-Boot console\e[0m\e[?25h\e[2J\e[1;1HBAIKAL # "
+  - "\r\n\r\nU-Boot 2014.10-00007-g229b386-dirty / SDK  (Aug 27 2020 - 14:05:36)\r\
+    \n\r\nCPU:   MIPS32 P5600 @ 1200 MHz (Rev 1.0)\r\nFPU:   Present\r\nCores: 2 (running\
+    \ on CPU0)\r\nTimer: 600 MHz\r\nECC:   L1 L2 (80800280)\r\nPLLs:  CPU: 1200MHz\
+    \  SATA: 600MHz  ETH:1250MHz\r\n       PCIE:1200MHz  DDR3: 266MHz  AXI: 600MHz\r\
+    \nBoard: Baikal-T1 RT1MB\r\n       Watchdog enabled\r\nI2C:   ready\r\nDRAM: \
+    \ Static SPD, Ranks = 1, highmem = 1792 MiB (1792 MiB below 4G)\r\nDBG_OUT: Config\
+    \ register 0 value:0x80040603\r\nDBG_OUT: Config register 1 value:0xFEE3719B\r\
+    \nDBG_OUT: Config register 2 value:0x80000647\r\nDBG_OUT: Config register 3 value:0xBF8032A9\r\
+    \nDBG_OUT: Config register 4 value:0xC01CC127\r\nDBG_OUT: Config register 5 value:0x10000038\r\
+    \nDBG_OUT: Config register 6 value:0x00008000\r\nDBG: Memory testing ........................\r\
+    \nDBG: memtest(): crc=0xA0750C39, eval_crc=0x00003744, immediate_stop=-1255342386,\r\
+    \niteration_count=-934965221, start_add=0xD6543DBA, stop_addr=0x864E24CF\r\nDRAM:\
+    \ lowmem = 128 MiB\r\nPOST memory PASSED\r\nMIPS:  SIMD ready\r\nMIPS:  Write\
+    \ Merge enable\r\nMIPS:  MAAR[0]: 0x00010000-0x07ffffff speculate\r\nARCH:  CPU\
+    \ core freq is set to 1200MHz\r\nIn:    serial\r\nOut:   serial\r\nErr:   serial\r\
+    \nNet:   DBG: phy_marvell_init\r\nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\
+    \nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\ndwmac.bf05e000, dwmac.bf060000\r\
+    \nHit any key to stop autoboot"

@@ -1,0 +1,62 @@
+device_num_1:
+  error: Ошибка c устройством 1
+  error_details: !!python/tuple
+  - - No link. Проблема с соединением. Проверьте кабель и SFP-модуль.
+    - 'ВЫВОД КОМАНД: ['' usb start ;                 dhcp ;                 setenv
+      serverip 192.168.1.2 ;                 setenv fdt_addr_n 0x85D00000 ;                 setenv
+      fdt_file_name baikal.dtb ;                 setenv initrd_addr_n 0x86000000 ;                 setenv
+      initrd_file_name initrd.gz ;                 setenv kernel_addr_n 0x80100000
+      ;                 setenv kernel_file_name vmlinux.bin ;                 setenv
+      bootargs console=ttyS0,115200n8 usbcore.autosuspend=-1                 ei-auto_install=true
+      ei-install_disk=/dev/sda ei-passwd_admin=admin                 ei-passwd_serviceuser=serviceuser
+      ei-passwd_master=NEJvjok1cywQfHBUw ;                 saveenv ;                 run
+      net_load_all_tftp ; run all_bootnr\r\n(Re)start USB...\r\nUSB0:   Register 1000140
+      NbrPorts 1\r\nStarting the controller\r\nUSB XHCI 1.00\r\nscanning bus 0 for
+      devices... 1 USB Device(s) found\r\n       scanning usb for storage devices...
+      0 Storage Device(s) found\r\ndwmac.bf05e000 Waiting for PHY auto negotiation
+      to complete. done\r\nSpeed: 1000, full duplex\r\nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\nBOOTP
+      broadcast 1\r\nBOOTP broadcast 2\r\nBOOTP broadcast 3\r\nBOOTP broadcast 4\r\nBOOTP
+      broadcast 5\r\nBOOTP broadcast 6\r\nBOOTP broadcast 7\r\nBOOTP broadcast 8\r\nBOOTP
+      broadcast 9\r\nBOOTP broadcast 10\r\nBOOTP broadcast 11\r\nBOOTP broadcast 12\r\nBOOTP
+      broadcast 13\r\nBOOTP broadcast 14\r\nBOOTP broadcast 15\r\nBOOTP broadcast
+      16\r\nBOOTP broadcast 17\r\n\r\nRetry time exceeded; starting again\r\ndwmac.bf060000
+      Waiting for PHY auto negotiation to complete......... TIMEOUT !\r\ndwmac.bf060000:
+      No link.\r\ndwmac.bf05e000 Waiting for PHY auto negotiation to complete. done\r\nSpeed:
+      1000, full duplex\r\nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\nBOOTP broadcast
+      1\r\n'']'
+    - '406'
+  sata_info: " sata init\r\nAHCI 0001.0300 32 slots 2 ports 6 Gbps 0x3 impl SATA mode\r\
+    \nflags: ncq stag pm led clo only pmp pio slum part \r\nSATA Device Info:\r\n\r\
+    S/N: 20201027AA100540F106\r\n\rProduct model number: nanoSSD 3ME3\r\n\rFirmware\
+    \ version: S17411\r\n\rCapacity: 31277232 sectors\r\n\rBAIKAL #"
+  sn: RS202001190001
+  uboot_prompt: !!python/tuple
+  - ":  0 \r\n\e[?25l\e[2J\e[1;1H\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 1\e[0K\e[10;1H\e[2K\e[4;1H     \e[7mNormal boot\e[0m\e[5;1H     Install\
+    \ software\e[6;1H     U-Boot console\e[8;1H  Hit any key to stop autoboot menu\
+    \ entry  1:  3\e[8;1H\e[2K\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e[0K\e\
+    [3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu entry\
+    \ 2\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     \e[7mInstall software\e\
+    [0m\e[6;1H     U-Boot console\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 3\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     Install software\e\
+    [6;1H     \e[7mU-Boot console\e[0m\e[?25h\e[2J\e[1;1HBAIKAL # "
+  - "\r\n\r\nU-Boot 2014.10-00007-g229b386-dirty / SDK  (Aug 27 2020 - 14:05:36)\r\
+    \n\r\nCPU:   MIPS32 P5600 @ 1200 MHz (Rev 1.0)\r\nFPU:   Present\r\nCores: 2 (running\
+    \ on CPU0)\r\nTimer: 600 MHz\r\nECC:   L1 L2 (80800ff0)\r\nPLLs:  CPU: 1200MHz\
+    \  SATA: 600MHz  ETH:1250MHz\r\n       PCIE:1200MHz  DDR3: 266MHz  AXI: 600MHz\r\
+    \nBoard: Baikal-T1 RT1MB\r\n       Watchdog enabled\r\nI2C:   ready\r\nDRAM: \
+    \ Static SPD, Ranks = 1, highmem = 1792 MiB (1792 MiB below 4G)\r\nDBG_OUT: Config\
+    \ register 0 value:0x80040603\r\nDBG_OUT: Config register 1 value:0xFEE3719B\r\
+    \nDBG_OUT: Config register 2 value:0x80000647\r\nDBG_OUT: Config register 3 value:0xBF8032A9\r\
+    \nDBG_OUT: Config register 4 value:0xC01CC127\r\nDBG_OUT: Config register 5 value:0x10000038\r\
+    \nDBG_OUT: Config register 6 value:0x00008000\r\nDBG: Memory testing ........................\r\
+    \nDBG: memtest(): crc=0xB0310C3B, eval_crc=0x00006273, immediate_stop=-198377778,\r\
+    \niteration_count=-934965221, start_add=0xC6543DBA, stop_addr=0x844E248F\r\nDRAM:\
+    \ lowmem = 128 MiB\r\nPOST memory PASSED\r\nMIPS:  SIMD ready\r\nMIPS:  Write\
+    \ Merge enable\r\nMIPS:  MAAR[0]: 0x00010000-0x07ffffff speculate\r\nARCH:  CPU\
+    \ core freq is set to 1200MHz\r\nIn:    serial\r\nOut:   serial\r\nErr:   serial\r\
+    \nNet:   DBG: phy_marvell_init\r\nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\
+    \nm88e1518_config: MIIM_88E151x_RGMII_RX_DELAY\r\ndwmac.bf05e000, dwmac.bf060000\r\
+    \nHit any key to stop autoboot"

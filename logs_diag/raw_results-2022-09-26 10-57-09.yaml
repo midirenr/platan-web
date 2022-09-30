@@ -1,0 +1,49 @@
+device_num_1:
+  error: Ошибка c устройством 1
+  error_details: !!python/tuple
+  - - Неожиданный вывод команды
+    - "ВЫВОД КОМАНДЫ: 0 SMP 2019-08-30 12:36:11.0784\r\nEnable data prefetch\r\nEnable\
+      \ instruction prefetch\r\nbootconsole [early0] enabled\r\nCPU0 revision is:\
+      \ 0001a830 (MIPS P5600)\r\nFPU revision is: 30f30320\r\nMSA revision is: 00000320\r\
+      \nMachine device tree at: 0x87de5000\r\nDetermined physical RAM map:\r\n memory:\
+      \ 08000000 @ 00000000 (usable)\r\n memory: 70000000 @ 20000000 (usable)\r\n\
+      sysctl duplicate entry: /net/core//txqueues_len\r\nm25p80 spi0.0: unrecognized\
+      \ JEDEC id bytes: ff, ff, ff\r\nm25p80 spi0.1: unrecognized JEDEC id bytes:\
+      \ ff, ff, ff\r\nm25p80 spi2.0: unrecognized JEDEC id bytes: c2, 25, 38\r\nhub\
+      \ 2-0:1.0: config failed, hub doesn't have any ports! (err -19)\r\ni8042: i8042\
+      \ controller selftest timeout\r\ndw_pcie_init: PCIe error code = 0x1c0\r\nmips_pcibios_init:\
+      \ Init DW PCI controller failed\r\nsata init\r\nWaiting for full initialization\
+      \ of mprdaemon *******"
+    - '202'
+  sn: RS102001180001
+  uboot_prompt: !!python/tuple
+  - ":  0 \r\n\e[?25l\e[2J\e[1;1H\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[9;1H\e[2K\e[10;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 1\e[0K\e[11;1H\e[2K\e[4;1H     \e[7mNormal boot\e[0m\e[5;1H     Install\
+    \ software\e[6;1H     BMC console\e[7;1H     U-Boot console\e[9;1H  Hit any key\
+    \ to stop autoboot menu entry  1:  3\e[9;1H\e[2K\e[1;1H\e[2K\e[2;1H  --== RT1MB\
+    \ boot menu ==--\e[0K\e[3;1H\e[2K\e[9;1H\e[2K\e[10;1H  Press UP/DOWN to move,\
+    \ ENTER to select menu entry 2\e[0K\e[11;1H\e[2K\e[4;1H     Normal boot\e[5;1H\
+    \     \e[7mInstall software\e[0m\e[6;1H     BMC console\e[7;1H     U-Boot console\e\
+    [1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e[0K\e[3;1H\e[2K\e[9;1H\e[2K\e[10;1H\
+    \  Press UP/DOWN to move, ENTER to select menu entry 3\e[0K\e[11;1H\e[2K\e[4;1H\
+    \     Normal boot\e[5;1H     Install software\e[6;1H     \e[7mBMC console\e[0m\e\
+    [7;1H     U-Boot console\e[?25h\e[2J\e[1;1H(Re)start USB...\r\nUSB0:   Register\
+    \ 1000140 NbrPorts 1\r\nStarting the controller\r\nUSB XHCI 1.00\r\nscanning bus\
+    \ 0 for devices... "
+  - "\r\n\r\nU-Boot 2014.10 / SDK 4.18 (Sep 15 2022 - 18:58:25)\r\n\r\nCPU:   MIPS32\
+    \ P5600 @ 1200 MHz (Rev 1.0)\r\nFPU:   Present\r\nCores: 2 (running on CPU0)\r\
+    \nTimer: 600 MHz\r\nECC:   L1 L2 (80800bc0)\r\nPLLs:  CPU: 1200MHz  SATA: 600MHz\
+    \  ETH:1250MHz\r\n       PCIE:1200MHz  DDR3: 400MHz  AXI: 600MHz\r\nBoard: Baikal-T1\
+    \ RT1MB\r\n       Watchdog enabled\r\nI2C:   ready\r\nDRAM:  Static SPD, Ranks\
+    \ = 1, highmem = 1792 MiB (1792 MiB below 4G)\r\nDBG_OUT: Config register 0 value:0x80040603\r\
+    \nDBG_OUT: Config register 1 value:0xFEE3719B\r\nDBG_OUT: Config register 2 value:0x80000647\r\
+    \nDBG_OUT: Config register 3 value:0xBF8032A9\r\nDBG_OUT: Config register 4 value:0xC01CC127\r\
+    \nDBG_OUT: Config register 5 value:0x10000038\r\nDBG_OUT: Config register 6 value:0x00008000\r\
+    \nDBG: Memory testing ........................\r\nDBG: memtest(): crc=0xD7FDC668,\
+    \ eval_crc=0x0000A490, immediate_stop=751628977,\r\niteration_count=-916469134,\
+    \ start_add=0xD63AE02A, stop_addr=0xD3B16C3E\r\nDRAM: lowmem = 128 MiB\r\nPOST\
+    \ memory PASSED\r\nMIPS:  SIMD ready\r\nMIPS:  Write Merge enable\r\nMIPS:  MAAR[0]:\
+    \ 0x00010000-0x07ffffff speculate\r\nARCH:  CPU core freq is set to 1200MHz\r\n\
+    In:    serial\r\nOut:   serial\r\nErr:   serial\r\nNet:   DBG: phy_marvell_init\r\
+    \ndwmac.bf05e000, dwmac.bf060000\r\nHit any key to stop autoboot"

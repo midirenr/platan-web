@@ -1,0 +1,7 @@
+device_num_1:
+  error: Ошибка c устройством 1
+  error_details: !!python/tuple
+  - - Не удалось войти в Uboot. Возможно BOOT LOOP!
+    - 'ВЫВОД В КОНСОЛЬ: '
+    - '404'
+  sn: RS102001180001

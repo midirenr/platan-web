@@ -1,0 +1,4 @@
+<option value="0">---------</option>
+{% for modification_type in modifications %}
+<option value="{{ modification_type.pk }}">{{ modification_type.name }}</option>
+{% endfor %}

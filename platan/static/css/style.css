@@ -1,0 +1,517 @@
+html,body
+{
+    font-family: 'Helvetica Neue';
+    margin: 0;
+    height: 98vh;
+    width: 99vw;
+}
+
+.header-container
+{
+    background: #543ae8 url(logo_istok_white.png) no-repeat 5%;
+    background-size: 30vh;
+    display: flex;
+    height: 9vh;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.left-header
+{
+    width: 33.33%;
+}
+
+.middle-header
+{
+    width: 33.33%;
+    font-size:      4.5vmin;
+    color:          #f1f5d9;
+    padding-top:    10px;
+    white-space: nowrap;
+}
+
+.right-header
+{
+    display: grid;
+    width: 33.33%;
+    margin-right: 15px;
+}
+
+.username
+{
+    color: white;
+    grid-column: 3;
+    text-align: right;
+}
+
+.logout
+{
+    color: #e3dae0;
+    grid-column: 3;
+    text-align: right;
+}
+
+.login
+{
+    color: #e3dae0;
+    grid-column: 3;
+    text-align: right;
+}
+
+#login-left, #login-right
+{
+    background-color: #ffffff;
+}
+
+#login-form
+{
+    width:18%;
+}
+
+#login_button
+{
+    width: 100%;
+}
+
+.search-field
+{
+    height: max-content;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.content-container
+{
+    height: 88vh;
+    display: flex;
+}
+
+.left
+{
+    width:            15%;
+    background-color: #ffffff;
+    float:            left;
+    margin-right:     10px;
+    margin-left:      10px;
+    margin-bottom:    10px;
+    border-radius:    25px;
+    min-height: 87vh;
+}
+
+.menu
+{
+    height: max-content;
+}
+
+.sidebar
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+    list-style: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.sidebar a
+{
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active
+{
+    background: #6767e1;
+    color: white;
+}
+
+.sidebar a:hover:not(.active)
+{
+    background-color: #778899;
+    color: white;
+}
+
+.middle
+{
+    flex:             1;
+    padding:          20px;
+    border-radius:    25px;
+    margin-bottom:    10px;
+}
+
+.information-header
+{
+    height: 40px;
+}
+
+.information-container
+{
+    display: grid;
+
+}
+
+.router-image-container
+{
+    height: 80px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.router-image
+{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 2rem;
+}
+
+.information-status-container
+{
+    height: 80px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.router-name-container
+{
+    height: 80px;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.additionals-container
+{
+    height: 80px;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.hardware-name-container
+{
+    height: 80px;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.system-status-container
+{
+    height: 80px;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.ports-status-container
+{
+    height: 80px;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.ip-mac-container
+{
+    height: 80px;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.dhcp-count-container
+{
+    height: 80px;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.registered-count-container
+{
+    height: 80px;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.right
+{
+    width:            15%;
+    padding:          15px;
+    background-color: #ffffff;
+    float:            right;
+    margin-left:      10px;
+    border-radius:    25px;
+    margin-bottom:    10px;
+    margin-right:    10px;
+}
+
+.messages
+{
+    display: grid;
+    padding: 10px;
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.del-msg
+{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.info
+{
+    border: solid;
+    border-color: SteelBlue;
+    border-radius: 10px;
+}
+
+.warning
+{
+    border: solid;
+    border-color: Yellow;
+    border-radius: 10px;
+}
+
+.error
+{
+    border: solid;
+    border-color: Red;
+    border-radius: 10px;
+}
+
+.sidebar-nav
+{
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.documentation-container
+{
+    grid-column: 1;
+    display: grid;
+}
+
+#navigation
+{
+    cursor: pointer;
+}
+
+#navigation ul
+{
+    display: none;
+}
+
+#navigation li:checked ul
+{
+    display: block;
+}
+
+.dropdown-content
+{
+    display: none;
+}
+
+.show
+{
+    display: block;
+}
+
+.generate-serial-numbers-label
+{
+    width: 40%;
+}
+
+#id_device_type, #id_modification_type, #id_detail_type, #id_place_of_production
+{
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+#id_count
+{
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+#generate-serial-numbers-button
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.input-board-serial-number, .input-case-serial-number
+{
+    width: 100%;
+}
+
+#board-case-middle
+{
+    font-weight: bold;
+}
+
+#board-case-left, #board-case-right
+{
+    background-color: white;
+    width: 30%;
+}
+
+#board-case-chain,
+#id_board_serial_number
+{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#id_case_serial_number
+{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#id_device_serial_number
+{
+    width: 100%;
+    margin-bottom: 2%;`
+}
+
+#btn_device_package
+{
+    width: 100%;
+}
+
+#stand-visual-inspection-left, #stand-visual-inspection-right
+{
+    background-color: white;
+    width: 30%;
+}
+
+#stand-visual-inspection-middle
+{
+    font-weight: bold;
+}
+
+#btn_board_valid
+{
+    cursor: pointer;
+    border-radius: 14px;
+    font-size: 28px;
+    float: left;
+    padding: 14px 80px;
+    width: 35%;
+    background-color: #4CAF50;
+}
+
+#btn_board_defect
+{
+    cursor: pointer;
+    border-radius: 14px;
+    font-size: 28px;
+    float: right;
+    padding: 14px 80px;
+    width: 35%;
+    background-color: #f44336;
+}
+
+#diagnostic-form
+{
+    height: 100%;
+}
+
+#diag-left-frame
+{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+#diag-right-frame
+{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+#id_output
+{
+    margin-top: 2%;
+    width: 100%;
+    height: 90%;
+}
+
+#id_board_count
+{
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#board-container-1, #board-container-2, #board-container-3, #board-container-4, #board-container-5
+{
+    margin-bottom: 5%;
+}
+
+#id_board_serial_number_1, #id_board_serial_number_2, #id_board_serial_number_3, #id_board_serial_number_4, #id_board_serial_number_5
+{
+    width: 88%;
+}
+
+#btn_diagnostic_start
+{
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+#stand-diagnostic-middle
+{
+    font-size: 20px;
+}
+
+#stand-diagnostic-left, #stand-diagnostic-right
+{
+    background-color: #ffffff;
+}
+
+.errors
+{
+    font-size: 14px;
+    color: red;
+}
+
+#board_serial_number_1_error, #board_serial_number_2_error, #board_serial_number_3_error, #board_serial_number_4_error, #board_serial_number_5_error
+{
+    width: 88%;
+}
+
+#pci-form
+{
+    height: 100%;
+}
+
+#pci-left-frame
+{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+#pci-right-frame
+{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+#stand-pci-middle
+{
+    font-size: 20px;
+}
+
+#btn_pci_start
+{
+    width: 90%;
+    margin-bottom: 5%;
+}

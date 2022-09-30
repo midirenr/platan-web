@@ -1,0 +1,34 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+<title>Стенд плата-корпус</title>
+{% endblock %}
+
+{% block page_name %}<div align="center">Стенд плата-корпус</div>{% endblock %}
+
+{% block content-blocks %}
+
+<div class="left" id="board-case-left">
+
+</div>
+
+<div class="middle" id="board-case-middle">
+    <form method="post">
+        {% csrf_token %}
+        <div align="center">Отсканируйте серийный номер платы</div>
+        {{ form.board_serial_number }}
+        {{ form.board_serial_number.errors }}
+        <div align="center">Отсканируйте скрийный номер корпуса</div>
+        {{ form.case_serial_number }}
+        {{ form.case_serial_number.errors }}
+        <button type="submit" id="board-case-chain" name="submit_btn">Привязать</button>
+    </form>
+</div>
+
+<div class="right" id="board-case-right">
+
+</div>
+
+{% endblock %}

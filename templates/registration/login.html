@@ -1,0 +1,89 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+<title>Авторизация</title>
+{% endblock %}
+
+{% block page_name %}<div align="center">Авторизация</div>{% endblock %}
+
+{% block content-blocks %}
+
+<div class="left" id="login-left">
+
+</div>
+
+<div class="middle" id="login-middle" align="center">
+    {% if form.errors %}
+        <p>Ваш логин или пароль введён неправильно! Повторите попытку.</p>
+    {% endif %}
+
+    {% if next %}
+        {% if user.is_authenticated %}
+            <p id="logged-in">Вы уже авторизованы.</p>
+        {% else %}
+            <form method="post" action="{% url 'login' %}" id="login-form">
+            {% csrf_token %}
+            <table>
+
+                <tr>
+                    <td>{{ form.username.label_tag }}</td>
+                    <td>{{ form.username }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.password.label_tag }}</td>
+                    <td>{{ form.password }}</td>
+                </tr>
+            </table>
+
+            <input type="submit" id="login_button" value="Вход" />
+            <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+        {% endif %}
+    {% else %}
+        {% if user.is_authenticated %}
+            <p id="logged-in">Вы уже авторизованы.</p>
+        {% else %}
+            <form method="post" action="{% url 'login' %}" id="login-form">
+            {% csrf_token %}
+            <table>
+
+                <tr>
+                    <td>{{ form.username.label_tag }}</td>
+                    <td>{{ form.username }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.password.label_tag }}</td>
+                    <td>{{ form.password }}</td>
+                </tr>
+            </table>
+
+            <input type="submit" id="login_button" value="Вход" />
+            <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+        {% endif %}
+    {% endif %}
+
+
+</div>
+
+<div class="right" id="login-right">
+
+</div>
+
+<script>
+    $(document).ready(function()
+    {
+        $('.login').remove();
+
+    //    if ($('.username'))
+    //    {
+    //        $('#login-form').remove();
+    //    };
+    });
+</script>
+
+{% endblock %}

@@ -1,0 +1,189 @@
+device_num_1:
+  bootmenu_1_install:
+  - " usb start ;                 env set phy_sfp 1 ;                 dhcp ;     \
+    \            setenv serverip 192.168.1.2 ;                 setenv fdt_addr_n 0x85D00000\
+    \ ;                 setenv fdt_file_name baikal.dtb ;                 setenv initrd_addr_n\
+    \ 0x86000000 ;                 setenv initrd_file_name initrd.gz ;           \
+    \      setenv kernel_addr_n 0x80100000 ;                 setenv kernel_file_name\
+    \ vmlinux.bin ;                 setenv ci_installed 1 ;                 setenv\
+    \ bootargs console=ttyS0,115200n8 usbcore.autosuspend=-1                 ei-auto_install=true\
+    \ ei-install_disk=/dev/sda ei-passwd_admin=admin                 ei-passwd_serviceuser=serviceuser\
+    \ ei-passwd_master=NEJvjok1cywQfHBUw ;                 setenv sata_setup_disk\
+    \ \"sata init; run sata_common_disk\" ;                 saveenv ;            \
+    \     run net_load_all_tftp ; run all_bootnr\r\n(Re)start USB...\r\nUSB0:   Register\
+    \ 1000140 NbrPorts 1\r\nStarting the controller\r\nUSB XHCI 1.00\r\nscanning bus\
+    \ 0 for devices... 3 USB Device(s) found\r\n       scanning usb for storage devices...\
+    \ 1 Storage Device(s) found\r\n       scanning usb for ethernet devices... 0 Ethernet\
+    \ Device(s) found\r\ndwmac.bf05e000 Waiting for PHY auto negotiation to complete.\
+    \ done\r\nSpeed: 1000, full duplex\r\nBOOTP broadcast 1\r\nBOOTP broadcast 2\r\
+    \nBOOTP broadcast 3\r\nDHCP client bound to address 192.168.1.107 (1002 ms)\r\n\
+    Saving Environment to Flash...\r\nSF: Detected MX25U12832F with page size 256\
+    \ Bytes, erase size 64 KiB, total 16 MiB\r\nErasing SPI flash...done\r\nWriting\
+    \ to SPI flash...done\r\ndwmac.bf05e000 Waiting for PHY auto negotiation to complete.\
+    \ done\r\nSpeed: 1000, full duplex\r\nUsing dwmac.bf05e000 device\r\nTFTP from\
+    \ server 192.168.1.2; our IP address is 192.168.1.107\r\nFilename 'vmlinux.bin'.\r\
+    \nLoad address: 0x80100000\r\nLoading: *\b#"
+  error: Ошибка c устройством 1
+  error_details: !!python/tuple
+  - - Неожиданный вывод команды
+    - "ВЫВОД КОМАНДЫ: d\r\nНомер раздела (1,2, default 2): "
+    - '202'
+  flash_check_result: !!python/tuple
+  - " lshw -businfo\r\n\r\rDMI\r\r   \rSMP\r\r   \rPA-RISC\r\r       \rdevice-tree\r\
+    \r           \rSPD\r\r   \rmemory\r\r      \r/proc/cpuinfo\r\r             \r\
+    CPUID\r\r     \rPCI (sysfs)\r\r           \rISA PnP\r\r       \rPnP (sysfs)\r\r\
+    \           \rPCMCIA\r\r      \rPCMCIA\r\r      \rVirtual I/O (VIRTIO) devices\r\
+    \r                            \rIBM Virtual I/O (VIO)\r\r                    \
+    \ \rkernel device tree (sysfs)\r\r                          \rUSB\r\r   \rIDE\r\
+    \r   \rSCSI\r\r    \rNVMe\r\r    \rMMC\r\r   \rS/390 devices\r\r             \r\
+    Network interfaces\r\r                  \rFramebuffer devices\r\r            \
+    \       \rDisplay\r\r       \rCPUFreq\r\r       \rABI\r\r   \r\rBus info     \
+    \   Device     Class      Description\r\n=================================================\r\
+    \n                           system     Baikal-T1 BFKX evaluation board\r\n  \
+    \                         bus        Motherboard\r\ncpu@0                    \
+    \  processor  cpu\r\ncpu@1                      processor  cpu\r\n           \
+    \                memory     2039MiB System memory\r\n                scsi0   \
+    \   storage    \r\nscsi@0:0.0.0    /dev/sda   disk       16GB nanoSSD 3ME3\r\n\
+    scsi@0:0.0.0,1  /dev/sda1  volume     486MiB EXT4 volume\r\nscsi@0:0.0.0,2  /dev/sda2\
+    \  volume     14GiB Linux filesystem partition\r\nusb@1:1.2       scsi2      storage\
+    \    \r\nscsi@2:0.0.0    /dev/sdb   disk       16GB Cruzer Blade\r\n         \
+    \       /dev/sdb   disk       16GB \r\n                /dev/sdb1  volume     477MiB\
+    \ Windows FAT volume\r\n                /dev/sdb2  volume     14GiB Linux filesystem\
+    \ partition\r\n                eth2       network    Ethernet interface\r\n  \
+    \              eth1       network    Ethernet interface\r\n                eth0\
+    \       network    Ethernet interface\r\nroot@sr-be:/home/admin#"
+  - По крайней мере один flash накопитель не определился, возможно, USB порты неисправны
+  hdd_check_result: !!python/tuple
+  - " lshw -businfo\r\n\r\rDMI\r\r   \rSMP\r\r   \rPA-RISC\r\r       \rdevice-tree\r\
+    \r           \rSPD\r\r   \rmemory\r\r      \r/proc/cpuinfo\r\r             \r\
+    CPUID\r\r     \rPCI (sysfs)\r\r           \rISA PnP\r\r       \rPnP (sysfs)\r\r\
+    \           \rPCMCIA\r\r      \rPCMCIA\r\r      \rVirtual I/O (VIRTIO) devices\r\
+    \r                            \rIBM Virtual I/O (VIO)\r\r                    \
+    \ \rkernel device tree (sysfs)\r\r                          \rUSB\r\r   \rIDE\r\
+    \r   \rSCSI\r\r    \rNVMe\r\r    \rMMC\r\r   \rS/390 devices\r\r             \r\
+    Network interfaces\r\r                  \rFramebuffer devices\r\r            \
+    \       \rDisplay\r\r       \rCPUFreq\r\r       \rABI\r\r   \r\rBus info     \
+    \   Device     Class      Description\r\n=================================================\r\
+    \n                           system     Baikal-T1 BFKX evaluation board\r\n  \
+    \                         bus        Motherboard\r\ncpu@0                    \
+    \  processor  cpu\r\ncpu@1                      processor  cpu\r\n           \
+    \                memory     2039MiB System memory\r\n                scsi0   \
+    \   storage    \r\nscsi@0:0.0.0    /dev/sda   disk       16GB nanoSSD 3ME3\r\n\
+    scsi@0:0.0.0,1  /dev/sda1  volume     486MiB EXT4 volume\r\nscsi@0:0.0.0,2  /dev/sda2\
+    \  volume     14GiB Linux filesystem partition\r\nusb@1:1.2       scsi2      storage\
+    \    \r\nscsi@2:0.0.0    /dev/sdb   disk       16GB Cruzer Blade\r\n         \
+    \       /dev/sdb   disk       16GB \r\n                /dev/sdb1  volume     477MiB\
+    \ Windows FAT volume\r\n                /dev/sdb2  volume     14GiB Linux filesystem\
+    \ partition\r\n                eth2       network    Ethernet interface\r\n  \
+    \              eth1       network    Ethernet interface\r\n                eth0\
+    \       network    Ethernet interface\r\nroot@sr-be:/home/admin#"
+  - Внешний HDD не найден
+  - Внутренний HDD найден
+  nmc_check_result: 'Исполнение без NMC модуля, проверка наличия NMC модуля не проводилась '
+  ping_result: 'PING 192.168.201.1 (192.168.201.1) 56(84) bytes of data.
+
+    From 192.168.201.254 icmp_seq=1 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=2 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=3 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=4 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=5 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=6 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=7 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=8 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=9 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=10 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=11 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=12 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=13 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=14 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=15 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=16 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=17 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=18 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=19 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=20 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=21 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=22 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=23 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=24 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=25 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=26 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=27 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=28 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=29 Destination Host Unreachable
+
+    From 192.168.201.254 icmp_seq=30 Destination Host Unreachable
+
+
+    --- 192.168.201.1 ping statistics ---
+
+    30 packets transmitted, 0 received, +30 errors, 100% packet loss, time 7512ms
+
+    pipe 12
+
+    '
+  post_install_check_result: "show version\r\nVersion: 3.21.40-01 mips sr-be 4.4.165-bfkx\
+    \ mpls\r\nBuild date: Пт июл 22 22:55:32 MSK 2022 \r\nadmin@sr-be#"
+  sata_info: " sata init\r\nAHCI 0001.0300 32 slots 2 ports 6 Gbps 0x3 impl SATA mode\r\
+    \nflags: ncq stag pm led clo only pmp pio slum part \r\nSATA Device Info:\r\n\r\
+    S/N: 20201027AA100541411A\r\n\rProduct model number: nanoSSD 3ME3\r\n\rFirmware\
+    \ version: S17411\r\n\rCapacity: 31277232 sectors\r\n\rBAIKAL #"
+  sn: RS102001180001
+  start_installing_sw: "\r\n"
+  uboot_prompt: !!python/tuple
+  - ":  0 \r\n\e[?25l\e[2J\e[1;1H\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 1\e[0K\e[10;1H\e[2K\e[4;1H     \e[7mNormal boot\e[0m\e[5;1H     Install\
+    \ software\e[6;1H     U-Boot console\e[8;1H  Hit any key to stop autoboot menu\
+    \ entry  1:  3\e[8;1H\e[2K\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e[0K\e\
+    [3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu entry\
+    \ 2\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     \e[7mInstall software\e\
+    [0m\e[6;1H     U-Boot console\e[1;1H\e[2K\e[2;1H  --== RT1MB boot menu ==--\e\
+    [0K\e[3;1H\e[2K\e[8;1H\e[2K\e[9;1H  Press UP/DOWN to move, ENTER to select menu\
+    \ entry 3\e[0K\e[10;1H\e[2K\e[4;1H     Normal boot\e[5;1H     Install software\e\
+    [6;1H     \e[7mU-Boot console\e[0m\e[?25h\e[2J\e[1;1HBAIKAL # "
+  - "\r\n\r\nU-Boot 2014.10-gb85c2d1-dirty / SDK 4.18 (Oct 13 2021 - 13:44:18)\r\n\
+    \r\nCPU:   MIPS32 P5600 @ 1200 MHz (Rev 1.0)\r\nFPU:   Present\r\nCores: 2 (running\
+    \ on CPU0)\r\nTimer: 600 MHz\r\nECC:   L1 L2 (80800710)\r\nPLLs:  CPU: 1200MHz\
+    \  SATA: 600MHz  ETH:1250MHz\r\n       PCIE:1200MHz  DDR3: 400MHz  AXI: 600MHz\r\
+    \nBoard: Baikal-T1 RT1MB\r\n       Watchdog enabled\r\nI2C:   ready\r\nDRAM: \
+    \ Static SPD, Ranks = 1, highmem = 1792 MiB (1792 MiB below 4G)\r\nDBG_OUT: Config\
+    \ register 0 value:0x80040603\r\nDBG_OUT: Config register 1 value:0xFEE3719B\r\
+    \nDBG_OUT: Config register 2 value:0x80000647\r\nDBG_OUT: Config register 3 value:0xBF8032A9\r\
+    \nDBG_OUT: Config register 4 value:0xC01CC127\r\nDBG_OUT: Config register 5 value:0x10000038\r\
+    \nDBG_OUT: Config register 6 value:0x00008000\r\nDBG: Memory testing ........................\r\
+    \nDBG: memtest(): crc=0xCDAE5D4A, eval_crc=0x000072CF, immediate_stop=-799884904,\r\
+    \niteration_count=1574766120, start_add=0x07BD59CE, stop_addr=0x23C5D61C\r\nDRAM:\
+    \ lowmem = 128 MiB\r\nPOST memory PASSED\r\nMIPS:  SIMD ready\r\nMIPS:  Write\
+    \ Merge enable\r\nMIPS:  MAAR[0]: 0x00010000-0x07ffffff speculate\r\nARCH:  CPU\
+    \ core freq is set to 1200MHz\r\nIn:    serial\r\nOut:   serial\r\nErr:   serial\r\
+    \nNet:   DBG: phy_marvell_init\r\ndwmac.bf05e000, dwmac.bf060000\r\nHit any key\
+    \ to stop autoboot"

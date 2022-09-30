@@ -1,0 +1,37 @@
+hw_platform_check: False 
+hdd_present: True
+
+# количество портов NMC, которые должны определиться устройством. 0 если АП без NMC.
+nmc_ports_count: 0
+
+# логирование, поддерживаются уровни 15(verbose, использовать только для отладки на одном устройстве) и 20(info)
+log_level: 20
+
+# router1 parameters
+router_template:
+  ip: localhost
+  port: 231
+
+# Passwords for default users
+passwords:
+  admin: admin
+  serviceuser: serviceuser
+  master: NEJvjok1cywQfHBUw
+
+
+host:
+  device_type: linux
+  host: localhost
+  username: 'ubuntu'
+  password: 'ubuntu'
+  secret: 'ubuntu'
+  ftp_directory: /sr-be/cs/repo
+  tftp_directory: /srv/tftp/sr-be/boot
+
+#Database connection parameters
+db:
+  host: localhost
+  port: 5432
+  login: postgres
+  password: postgres
+  db_name: platan_web

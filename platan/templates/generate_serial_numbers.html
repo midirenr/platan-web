@@ -1,0 +1,84 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+<title>Генерация серийных номеров</title>
+{% endblock %}
+
+{% block page_name %}<div align="center">Генерация серийных номеров</div>{% endblock %}
+
+{% block content-blocks %}
+
+<div class="left">
+
+</div>
+
+<div class="middle" align="center">
+    <form method="post" id="generateSerialNumbers" data-modifications-url="{% url 'ajax_load_modifications' %}">
+        {% csrf_token %}
+        <div class="generate-serial-numbers-label">Тип устройства</div>
+        {{ form.device_type }}
+        <div class="generate-serial-numbers-label">Тип модификации</div>
+        {{ form.modification_type }}
+        <div class="generate-serial-numbers-label">Тип детали</div>
+        {{ form.detail_type }}
+        <div class="generate-serial-numbers-label">Место производства</div>
+        {{ form.place_of_production }}
+        <div class="generate-serial-numbers-label">Количество</div>
+        {{ form.count }}
+        <div class="generate-serial-numbers-label"><button type="submit" id="generate-serial-numbers-button" class="save btn btn-default" name="submit_btn">Сгенерировать</button></div>
+    </form>
+
+    <script>
+        window.onload = function clearModificationCheckBox()
+        {
+            let html_data = '<option value="">---------</option>';
+            $("#id_modification_type").html(html_data);
+
+        }
+    </script>
+
+    <script>
+        $("#id_device_type").change(function () {
+            const url = $("#generateSerialNumbers").attr("data-modifications-url");  // get the url of the `load_modifications` view
+            const device_typeId = $(this).val();  // get the selected device_type ID from the HTML input
+
+            if (device_typeId == '')
+            {
+                search_id = 0;
+            }
+            else
+            {
+                search_id = device_typeId;
+            }
+
+            $.ajax({                       // initialize an AJAX request
+                url: url,                    // set the url of the request (= /ajax/load-modifications/ )
+                data: {
+                    'device_type_id': search_id // device_typeId        add the device_type id to the GET parameters
+                },
+                success: function (data) {   // `data` is the return of the `load_modifications` view function
+                    $("#id_modification_type").html(data);  // replace the contents of the modification input with the data that came from the server
+                    /*
+
+                    let html_data = '<option value="">---------</option>';
+                    data.forEach(function (modification_type) {
+                        html_data += `<option value="${modification_type.id}">${modification_type.name}</option>`
+                    });
+                    // console.log(html_data);
+                    $("#id_modification_type").html(html_data);
+
+                    */
+                }
+            });
+
+        });
+    </script>
+</div>
+
+<div class="right">
+
+</div>
+
+{% endblock %}

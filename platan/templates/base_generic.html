@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Добавление дополнительного статического CSS файла -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src="{{ STATIC_URL }} /static/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="left-header">
+
+        </div>
+
+        <div class="middle-header">
+            <b>{% block page_name %}{% endblock %}</b>
+        </div>
+
+        <div class="right-header">
+            {% if user.is_authenticated %}
+                <a class="username" href="">Имя пользователя: {{ user.get_username }}</a>
+                <a class="logout" href="{% url 'logout'%}">Выход</a>
+            {% else %}
+                <a class="login" href="">Авторизация</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="content-container">
+
+        {% block content-blocks %}
+
+        <!-- <div class="middle">
+            {% block content %}
+
+            {% endblock %} -->
+
+        {% endblock %}
+
+    </div>
+
+</body>
+</html>
