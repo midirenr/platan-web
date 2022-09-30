@@ -1,0 +1,945 @@
+2022-09-26 09:51:10 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 09:51:30 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 09:51:30 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 09:55:15 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 09:55:15 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 09:55:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 09:55:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 09:55:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 09:55:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 09:56:22 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 09:56:42 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 09:56:42 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 09:57:38 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 09:57:58 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 09:57:58 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:00:09 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:00:29 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:00:29 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:04:49 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:04:49 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:05:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:05:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:05:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:05:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:06:15 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:06:15 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:06:15 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:06:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:06:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:06:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:06:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:06:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:06:35 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:07:43 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:07:43 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:07:43 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:07:43 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:08:03 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:12:53 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:13:13 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:13:13 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:14:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:14:26 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:14:26 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:16:53 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:17:13 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:17:13 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:35:57 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:36:17 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:36:17 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:39:27 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:39:47 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:39:47 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:40:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:40:48 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 10:40:48 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 10:43:27 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:43:36 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 10:43:36 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 10:44:10 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 6 раз из 6
+2022-09-26 10:44:10 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-26 10:44:10 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-26 10:45:40 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  send_commands: No link. Проблема с соединением.
+2022-09-26 10:45:40 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  run: Устройство закончило работу с ошибкой: No link. Проблема с соединением. Проверьте кабель и SFP-модуль.
+2022-09-26 10:47:29 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:47:38 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 10:47:38 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 10:48:12 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 6 раз из 6
+2022-09-26 10:48:12 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-26 10:48:12 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-26 10:48:37 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  set_bootmenu: BOOTMENU натсроено
+2022-09-26 10:48:37 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  set_bootmenu: Началась загрузка файлов по TFTP
+2022-09-26 10:48:37 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  hw_check: Установка ПО на устройство
+2022-09-26 10:50:42 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  install_software: Не удалось обнаружить флешку с LABEL: INSTALLER
+2022-09-26 10:50:42 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS202001190001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось обнаружить флешку с LABEL: INSTALLER
+2022-09-26 10:55:00 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:55:07 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 10:55:07 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 10:55:53 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  send_command: Неожиданный вывод команды:ВЫВОД КОМАНДЫ: 0 SMP 2019-08-30 12:36:11.0784
+Enable data prefetch
+Enable instruction prefetch
+bootconsole [early0] enabled
+CPU0 revision is: 0001a830 (MIPS P5600)
+FPU revision is: 30f30320
+MSA revision is: 00000320
+Machine device tree at: 0x87de5000
+Determined physical RAM map:
+ memory: 08000000 @ 00000000 (usable)
+ memory: 70000000 @ 20000000 (usable)
+sysctl duplicate entry: /net/core//txqueues_len
+m25p80 spi0.0: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi0.1: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi2.0: unrecognized JEDEC id bytes: c2, 25, 38
+hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+i8042: i8042 controller selftest timeout
+dw_pcie_init: PCIe error code = 0x1c0
+mips_pcibios_init: Init DW PCI controller failed
+sata init
+sata init
+Waiting for full initialization of mprdaemon *********************
+2022-09-26 10:55:53 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Неожиданный вывод команды
+2022-09-26 10:56:16 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:56:26 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 10:56:26 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 10:57:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  send_command: Неожиданный вывод команды:ВЫВОД КОМАНДЫ: 0 SMP 2019-08-30 12:36:11.0784
+Enable data prefetch
+Enable instruction prefetch
+bootconsole [early0] enabled
+CPU0 revision is: 0001a830 (MIPS P5600)
+FPU revision is: 30f30320
+MSA revision is: 00000320
+Machine device tree at: 0x87de5000
+Determined physical RAM map:
+ memory: 08000000 @ 00000000 (usable)
+ memory: 70000000 @ 20000000 (usable)
+sysctl duplicate entry: /net/core//txqueues_len
+m25p80 spi0.0: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi0.1: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi2.0: unrecognized JEDEC id bytes: c2, 25, 38
+hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+i8042: i8042 controller selftest timeout
+dw_pcie_init: PCIe error code = 0x1c0
+mips_pcibios_init: Init DW PCI controller failed
+sata init
+Waiting for full initialization of mprdaemon *******
+2022-09-26 10:57:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  send_command: Неожиданный вывод команды:ВЫВОД КОМАНДЫ: 0 SMP 2019-08-30 12:36:11.0784
+Enable data prefetch
+Enable instruction prefetch
+bootconsole [early0] enabled
+CPU0 revision is: 0001a830 (MIPS P5600)
+FPU revision is: 30f30320
+MSA revision is: 00000320
+Machine device tree at: 0x87de5000
+Determined physical RAM map:
+ memory: 08000000 @ 00000000 (usable)
+ memory: 70000000 @ 20000000 (usable)
+sysctl duplicate entry: /net/core//txqueues_len
+m25p80 spi0.0: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi0.1: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi2.0: unrecognized JEDEC id bytes: c2, 25, 38
+hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+i8042: i8042 controller selftest timeout
+dw_pcie_init: PCIe error code = 0x1c0
+mips_pcibios_init: Init DW PCI controller failed
+sata init
+Waiting for full initialization of mprdaemon *******
+2022-09-26 10:57:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Неожиданный вывод команды
+2022-09-26 10:57:09 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Неожиданный вывод команды
+2022-09-26 10:57:11 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:57:40 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 10:57:51 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 10:57:51 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 10:58:37 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  send_command: Неожиданный вывод команды:ВЫВОД КОМАНДЫ: 0 SMP 2019-08-30 12:36:11.0784
+Enable data prefetch
+Enable instruction prefetch
+bootconsole [early0] enabled
+CPU0 revision is: 0001a830 (MIPS P5600)
+FPU revision is: 30f30320
+MSA revision is: 00000320
+Machine device tree at: 0x87de5000
+Determined physical RAM map:
+ memory: 08000000 @ 00000000 (usable)
+ memory: 70000000 @ 20000000 (usable)
+sysctl duplicate entry: /net/core//txqueues_len
+m25p80 spi0.0: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi0.1: unrecognized JEDEC id bytes: ff, ff, ff
+m25p80 spi2.0: unrecognized JEDEC id bytes: c2, 25, 38
+hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+i8042: i8042 controller selftest timeout
+dw_pcie_init: PCIe error code = 0x1c0
+mips_pcibios_init: Init DW PCI controller failed
+acpid: cannot open input layer
+sata init
+sata init
+Waiting for full initialization of mprdaemon *******
+2022-09-26 10:58:37 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Неожиданный вывод команды
+2022-09-26 11:01:26 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 11:01:36 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 11:01:36 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 11:02:10 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 5 раз из 6
+2022-09-26 11:02:10 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-26 11:02:10 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-26 11:02:17 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: BOOTMENU натсроено
+2022-09-26 11:02:17 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Началась загрузка файлов по TFTP
+2022-09-26 11:02:17 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Установка ПО на устройство
+2022-09-26 11:02:29 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  install_software: Загрузка файлов по TFTP прошла успешно. Началась установка файлов с флешки
+2022-09-26 11:02:29 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход для проведения проверок на устройство
+2022-09-26 11:02:29 - WARNING - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: Возможно ПО не было установлено, либо было установлено с ошибкой
+2022-09-26 11:02:47 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  login_to_router: Неожиданное приглашение cli после установки ПО
+2022-09-26 11:02:47 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: ['Неожиданное приглашение cli после установки ПО', 'PROMPT: \r\n', '401']
+2022-09-26 11:03:20 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  login_to_router: Неожиданное приглашение cli после установки ПО
+2022-09-26 11:03:20 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: ['Неожиданное приглашение cli после установки ПО', 'PROMPT: \r\n\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0fFormatting /dev/sda\n\x1b[19DMake Ext4 FS on /dev/sda1\n\x1b[25DMake new files and dirs on /dev/sda1\n\x1b[36D[base] Install zlib\n\x1b[19D[base] Install xz-utils\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f1\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0fFormatting /dev/sda\n\x1b[19DMake Ext4 FS on /dev/sda1\n\x1b[25DMake new files and dirs on /dev/sda1\n\x1b[36D[base] Install zlib\n\x1b[19D[base] Install xz-utils\n\x1b[23D[base] Install wget\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f1\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>', '401']
+2022-09-26 11:03:53 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  login_to_router: Неожиданное приглашение cli после установки ПО
+2022-09-26 11:03:53 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: ['Неожиданное приглашение cli после установки ПО', 'PROMPT: \x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install wget\n\x1b[19D[base] Install vim\n\x1b[18D[base] Install util-linux\n\x1b[25D[base] Install usbutils\n\x1b[23D[base] Install usbmount\n\x1b[23D[base] Install upstart\n\x1b[22D[base] Install update-initramfs\n\x1b[31D[base] Install tzdata\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f1\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install vim\n\x1b[18D[base] Install util-linux\n\x1b[25D[base] Install usbutils\n\x1b[23D[base] Install usbmount\n\x1b[23D[base] Install upstart\n\x1b[22D[base] Install update-initramfs\n\x1b[31D[base] Install tzdata\n\x1b[21D[base] Install tar\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install util-linux\n\x1b[25D[base] Install usbutils\n\x1b[23D[base] Install usbmount\n\x1b[23D[base] Install upstart\n\x1b[22D[base] Install update-initramfs\n\x1b[31D[base] Install tzdata\n\x1b[21D[base] Install tar\n\x1b[18D[base] Install sysvinit\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install usbutils\n\x1b[23D[base] Install usbmount\n\x1b[23D[base] Install upstart\n\x1b[22D[base] Install update-initramfs\n\x1b[31D[base] Install tzdata\n\x1b[21D[base] Install tar\n\x1b[18D[base] Install sysvinit\n\x1b[23D[base] Install sudo\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install usbmount\n\x1b[23D[base] Install upstart\n\x1b[22D[base] Install update-initramfs\n\x1b[31D[base] Install tzdata\n\x1b[21D[base] Install tar\n\x1b[18D[base] Install sysvinit\n\x1b[23D[base] Install sudo\n\x1b[19D[base] Install start-stop-daemon\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install upstart\n\x1b[22D[base] Install update-initramfs\n\x1b[31D[base] Install tzdata\n\x1b[21D[base] Install tar\n\x1b[18D[base] Install sysvinit\n\x1b[23D[base] Install sudo\n\x1b[19D[base] Install start-stop-daemon\n\x1b[32D[base] Install ssh-import-id\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install update-initramfs\n\x1b[31D[base] Install tzdata\n\x1b[21D[base] Install tar\n\x1b[18D[base] Install sysvinit\n\x1b[23D[base] Install sudo\n\x1b[19D[base] Install start-stop-daemon\n\x1b[32D[base] Install ssh-import-id\n\x1b[28D[base] Install shadow\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install tzdata\n\x1b[21D[base] Install tar\n\x1b[18D[base] Install sysvinit\n\x1b[23D[base] Install sudo\n\x1b[19D[base] Install start-stop-daemon\n\x1b[32D[base] Install ssh-import-id\n\x1b[28D[base] Install shadow\n\x1b[21D[base] Install service\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install tar\n\x1b[18D[base] Install sysvinit\n\x1b[23D[base] Install sudo\n\x1b[19D[base] Install start-stop-daemon\n\x1b[32D[base] Install ssh-import-id\n\x1b[28D[base] Install shadow\n\x1b[21D[base] Install service\n\x1b[22D[base] Install sed\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>\x1b(B\x1b)0\x1b[1;24r\x1b[m\x0f\x1b[4l\x1b[?7h\x1b[?1h\x1b=\x1b[?1h\x1b=\x1b[H\x1b[J Install SYSTEM - Install progress\r\n \x1b[0m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x0f\n\n\n\n\x1b[74D\x1b[0m\x0e\x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqq\x1b[0;7m\x0fInstalling\x1b[0;7m\x0eqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f                                                                    \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0elqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x1b[0;7m\x0f                               0%                             \x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0ex\x1b[0;7m\x0f  \x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x1b[0;7m\x0f  \x1b[0;7m\x0ex\x0f\x1b[m\x0f\n\x1b[70D\x1b[0;7m\x0emqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj\x0f\x1b[m\x0f\x1b[16;10H\x1b[0;7m\x0e\x0f\x1b[m\x0f\x1b[9A\x08\x08\x1b[0;7m\x0f[base] Install sysvinit\n\x1b[23D[base] Install sudo\n\x1b[19D[base] Install start-stop-daemon\n\x1b[32D[base] Install ssh-import-id\n\x1b[28D[base] Install shadow\n\x1b[21D[base] Install service\n\x1b[22D[base] Install sed\n\x1b[18D[base] Install rsyslog\x1b[16;10H\x1b[m\x0f      \x1b[16;40H\x1b[0;7m\x0f11\x1b[16;16H\x1b[m\x0f\x1b[6D\x1b[H\n\x1b[79C\x1b[24;1H\r\x1b[?1l\x1b>', '401']
+2022-09-26 11:04:23 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  send_command: Неожиданный вывод команды:ВЫВОД КОМАНДЫ: (B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install sudo
+[19D[base] Install start-stop-daemon
+[32D[base] Install ssh-import-id
+[28D[base] Install shadow
+[21D[base] Install service
+[22D[base] Install sed
+[18D[base] Install rsyslog
+[22D[base] Install readline[16;10H[m      [16;40H[0;7m11[16;16H[m[6D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install start-stop-daemon
+[32D[base] Install ssh-import-id
+[28D[base] Install shadow
+[21D[base] Install service
+[22D[base] Install sed
+[18D[base] Install rsyslog
+[22D[base] Install readline
+[23D[base] Install python[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install ssh-import-id
+[28D[base] Install shadow
+[21D[base] Install service
+[22D[base] Install sed
+[18D[base] Install rsyslog
+[22D[base] Install readline
+[23D[base] Install python
+[21D[base] Install pth[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install shadow
+[21D[base] Install service
+[22D[base] Install sed
+[18D[base] Install rsyslog
+[22D[base] Install readline
+[23D[base] Install python
+[21D[base] Install pth
+[18D[base] Install psmisc[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install service
+[22D[base] Install sed
+[18D[base] Install rsyslog
+[22D[base] Install readline
+[23D[base] Install python
+[21D[base] Install pth
+[18D[base] Install psmisc
+[21D[base] Install popt[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install sed
+[18D[base] Install rsyslog
+[22D[base] Install readline
+[23D[base] Install python
+[21D[base] Install pth
+[18D[base] Install psmisc
+[21D[base] Install popt
+[19D[base] Install pcre[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install rsyslog
+[22D[base] Install readline
+[23D[base] Install python
+[21D[base] Install pth
+[18D[base] Install psmisc
+[21D[base] Install popt
+[19D[base] Install pcre
+[19D[base] Install pciutils[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install readline
+[23D[base] Install python
+[21D[base] Install pth
+[18D[base] Install psmisc
+[21D[base] Install popt
+[19D[base] Install pcre
+[19D[base] Install pciutils
+[23D[base] Install pam[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install python
+[21D[base] Install pth
+[18D[base] Install psmisc
+[21D[base] Install popt
+[19D[base] Install pcre
+[19D[base] Install pciutils
+[23D[base] Install pam
+[18D[base] Install p11-kit[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install pth
+[18D[base] Install psmisc
+[21D[base] Install popt
+[19D[base] Install pcre
+[19D[base] Install pciutils
+[23D[base] Install pam
+[18D[base] Install p11-kit
+[22D[base] Install opkg[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install psmisc
+[21D[base] Install popt
+[19D[base] Install pcre
+[19D[base] Install pciutils
+[23D[base] Install pam
+[18D[base] Install p11-kit
+[22D[base] Install opkg
+[19D[base] Install openssl[16;10H[m       [16;40H[0;7m12[16;17H[m[7D[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install popt
+[19D[base] Install pcre
+[19D[base] Install pciutils
+[23D[base] Install pam
+[18D[base] Install p11-kit
+[22D[base] Install opkg
+[19D[base] Install openssl
+[22D[base] Install ntfs-3g[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>show version
+(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install pcre
+[19D[base] Install pciutils
+[23D[base] Install pam
+[18D[base] Install p11-kit
+[22D[base] Install opkg
+[19D[base] Install openssl
+[22D[base] Install ntfs-3g
+[22D[base] Install nettle[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install pciutils
+[23D[base] Install pam
+[18D[base] Install p11-kit
+[22D[base] Install opkg
+[19D[base] Install openssl
+[22D[base] Install ntfs-3g
+[22D[base] Install nettle
+[21D[base] Install netbase[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install pam
+[18D[base] Install p11-kit
+[22D[base] Install opkg
+[19D[base] Install openssl
+[22D[base] Install ntfs-3g
+[22D[base] Install nettle
+[21D[base] Install netbase
+[22D[base] Install ncurses[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install p11-kit
+[22D[base] Install opkg
+[19D[base] Install openssl
+[22D[base] Install ntfs-3g
+[22D[base] Install nettle
+[21D[base] Install netbase
+[22D[base] Install ncurses
+[22D[base] Install nano[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install opkg
+[19D[base] Install openssl
+[22D[base] Install ntfs-3g
+[22D[base] Install nettle
+[21D[base] Install netbase
+[22D[base] Install ncurses
+[22D[base] Install nano
+[19D[base] Install mountall[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install openssl
+[22D[base] Install ntfs-3g
+[22D[base] Install nettle
+[21D[base] Install netbase
+[22D[base] Install ncurses
+[22D[base] Install nano
+[19D[base] Install mountall
+[23D[base] Install module-init-tools[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install ntfs-3g
+[22D[base] Install nettle
+[21D[base] Install netbase
+[22D[base] Install ncurses
+[22D[base] Install nano
+[19D[base] Install mountall
+[23D[base] Install module-init-tools
+[32D[base] Install makedev[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install nettle
+[21D[base] Install netbase
+[22D[base] Install ncurses
+[22D[base] Install nano
+[19D[base] Install mountall
+[23D[base] Install module-init-tools
+[32D[base] Install makedev
+[22D[base] Install lsof[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install netbase
+[22D[base] Install ncurses
+[22D[base] Install nano
+[19D[base] Install mountall
+[23D[base] Install module-init-tools
+[32D[base] Install makedev
+[22D[base] Install lsof
+[19D[base] Install lshw[16;10H[m        [16;40H[0;7m13[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install ncurses
+[22D[base] Install nano
+[19D[base] Install mountall
+[23D[base] Install module-init-tools
+[32D[base] Install makedev
+[22D[base] Install lsof
+[19D[base] Install lshw
+[19D[base] Install lsb[16;10H[m        [16;40H[0;7m14[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install nano
+[19D[base] Install mountall
+[23D[base] Install module-init-tools
+[32D[base] Install makedev
+[22D[base] Install lsof
+[19D[base] Install lshw
+[19D[base] Install lsb
+[18D[base] Install logrotate[16;10H[m        [16;40H[0;7m14[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install mountall
+[23D[base] Install module-init-tools
+[32D[base] Install makedev
+[22D[base] Install lsof
+[19D[base] Install lshw
+[19D[base] Install lsb
+[18D[base] Install logrotate
+[24D[base] Install lockfile-progs[16;10H[m        [16;40H[0;7m14[16;18H[m[16;10H[H
+[79C[24;1H[?1l>(B)0[1;24r[m[4l[?7h[?1h=[?1h=[H[J Install SYSTEM - Install progress
+ [0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
+
+
+[74D[0m[0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqq[0;7mInstalling[0;7mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m                                                                    [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mx[0;7m                               0%                             [0;7mx[0;7m  [0;7mx[m
+[70D[0;7mx[0;7m  [0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[0;7m  [0;7mx[m
+[70D[0;7mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj[m[16;10H[0;7m[m[9A[0;7m[base] Install module-init-tools
+[32D[base] Install makedev
+[22D[base] Install lsof
+[19D[base] Install lshw
+[19D[base] Install lsb
+[18D[base] Install logrotate
+[24D[base] Install lockfile-progs
+[29D[base] Install libxml2[16;10H[m        [16;40H[0;7m14[16;18H[m[16;10H[H
+[79C[24;1H[?1l>
+2022-09-26 11:04:23 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Неожиданный вывод команды
+2022-09-26 11:05:14 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 11:05:25 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 11:05:25 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 11:05:59 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 6 раз из 6
+2022-09-26 11:05:59 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-26 11:05:59 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-26 11:06:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: BOOTMENU натсроено
+2022-09-26 11:06:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Началась загрузка файлов по TFTP
+2022-09-26 11:06:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Установка ПО на устройство
+2022-09-26 11:06:18 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  install_software: Загрузка файлов по TFTP прошла успешно. Началась установка файлов с флешки
+2022-09-26 11:06:18 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход для проведения проверок на устройство
+2022-09-26 11:06:18 - WARNING - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: Возможно ПО не было установлено, либо было установлено с ошибкой
+2022-09-26 11:07:01 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 11:07:11 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 11:07:11 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 11:07:46 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 6 раз из 6
+2022-09-26 11:07:46 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-26 11:07:46 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-26 11:07:53 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: BOOTMENU натсроено
+2022-09-26 11:07:53 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Началась загрузка файлов по TFTP
+2022-09-26 11:07:53 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Установка ПО на устройство
+2022-09-26 11:08:05 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  install_software: Загрузка файлов по TFTP прошла успешно. Началась установка файлов с флешки
+2022-09-26 11:18:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход для проведения проверок на устройство
+2022-09-26 11:18:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: ПО было успешно установленно
+2022-09-26 11:18:32 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: Вход на устройство выполнен успешно
+2022-09-26 11:18:32 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия HDD на устройстве
+2022-09-26 11:18:52 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внешний HDD не найден
+2022-09-26 11:18:52 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внутренний HDD найден
+2022-09-26 11:18:52 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия 2-х Flash накопителей на устройстве
+2022-09-26 11:19:13 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  flash_check: По крайней мере один flash накопитель не определился, возможно, USB порты неисправны
+2022-09-26 11:19:13 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка работоспособности портов на устройстве
+2022-09-26 11:19:43 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  ports_check: Порты не прошли проверку
+2022-09-26 11:19:43 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Удаление разделов на устройстве
+2022-09-26 11:19:53 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  send_command: Неожиданный вывод команды:ВЫВОД КОМАНДЫ: d
+Номер раздела (1,2, default 2): 
+2022-09-26 11:19:53 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Неожиданный вывод команды
+2022-09-26 11:35:05 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 11:35:25 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 11:35:25 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-26 11:35:37 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 11:35:47 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 11:35:47 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 11:36:21 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 5 раз из 6
+2022-09-26 11:36:21 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-26 11:36:21 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-26 11:36:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: BOOTMENU натсроено
+2022-09-26 11:36:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Началась загрузка файлов по TFTP
+2022-09-26 11:36:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Установка ПО на устройство
+2022-09-26 11:36:41 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  install_software: Загрузка файлов по TFTP прошла успешно. Началась установка файлов с флешки
+2022-09-26 11:46:41 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход для проведения проверок на устройство
+2022-09-26 11:46:42 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: ПО было успешно установленно
+2022-09-26 11:47:07 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: Вход на устройство выполнен успешно
+2022-09-26 11:47:07 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия HDD на устройстве
+2022-09-26 11:47:28 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внешний HDD не найден
+2022-09-26 11:47:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внутренний HDD найден
+2022-09-26 11:47:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия 2-х Flash накопителей на устройстве
+2022-09-26 11:47:49 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  flash_check: По крайней мере один flash накопитель не определился, возможно, USB порты неисправны
+2022-09-26 11:47:49 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка работоспособности портов на устройстве
+2022-09-26 11:48:19 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  ports_check: Порты не прошли проверку
+2022-09-26 11:48:19 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибками АП: Внешний HDD не найден, Внутренний HDD найден, По крайней мере один flash накопитель не определился, возможно, USB порты неисправны, 100% packet loss
+2022-09-26 11:52:44 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 11:53:15 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 11:53:25 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-26 11:53:25 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-26 11:53:59 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 6 раз из 6
+2022-09-26 11:53:59 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-26 11:53:59 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-26 11:54:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: BOOTMENU натсроено
+2022-09-26 11:54:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Началась загрузка файлов по TFTP
+2022-09-26 11:54:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Установка ПО на устройство
+2022-09-26 11:54:18 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  install_software: Загрузка файлов по TFTP прошла успешно. Началась установка файлов с флешки
+2022-09-26 12:04:19 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход для проведения проверок на устройство
+2022-09-26 12:04:20 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: ПО было успешно установленно
+2022-09-26 12:04:45 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: Вход на устройство выполнен успешно
+2022-09-26 12:04:45 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия HDD на устройстве
+2022-09-26 12:05:06 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внешний HDD не найден
+2022-09-26 12:05:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внутренний HDD найден
+2022-09-26 12:05:06 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия 2-х Flash накопителей на устройстве
+2022-09-26 12:05:26 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  flash_check: По крайней мере один flash накопитель не определился, возможно, USB порты неисправны
+2022-09-26 12:05:26 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка работоспособности портов на устройстве
+2022-09-26 12:05:56 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  ports_check: Порты не прошли проверку
+2022-09-26 12:05:56 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибками АП: Внешний HDD не найден, Внутренний HDD найден, По крайней мере один flash накопитель не определился, возможно, USB порты неисправны, 100% packet loss
+2022-09-26 13:22:50 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-26 13:23:10 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Не удалось войти в U-BOOT...
+2022-09-26 13:23:10 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: Не удалось войти в Uboot. Возможно BOOT LOOP!
+2022-09-27 15:21:37 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-27 15:23:57 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-27 15:24:12 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-27 15:24:12 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-27 15:24:46 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 6 раз из 6
+2022-09-27 15:24:46 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-27 15:24:46 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-27 15:26:14 - ERROR - СТЕНД_ПСИ -  RS102001180001  -  1  -  send_commands: No link. Проблема с соединением.
+2022-09-27 15:26:14 - ERROR - СТЕНД_ПСИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибкой: No link. Проблема с соединением. Проверьте кабель и SFP-модуль.
+2022-09-27 15:27:54 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход в Uboot устройства
+2022-09-27 15:28:08 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  enter_uboot: Вход в U-boot выполнен успешно
+2022-09-27 15:28:08 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Инициализация SSD устойства
+2022-09-27 15:28:42 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  init_disk: SSD удалось инициализировать! SSD удалось инициализировать 6 раз из 6
+2022-09-27 15:28:42 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Настройка Bootmenu устройства
+2022-09-27 15:28:42 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Начало наcтройки BOOTMENU
+2022-09-27 15:28:49 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: BOOTMENU натсроено
+2022-09-27 15:28:49 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  set_bootmenu: Началась загрузка файлов по TFTP
+2022-09-27 15:28:49 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Установка ПО на устройство
+2022-09-27 15:29:02 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  install_software: Загрузка файлов по TFTP прошла успешно. Началась установка файлов с флешки
+2022-09-27 15:39:02 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Вход для проведения проверок на устройство
+2022-09-27 15:39:03 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: ПО было успешно установленно
+2022-09-27 15:39:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  post_install_check: Вход на устройство выполнен успешно
+2022-09-27 15:39:28 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия HDD на устройстве
+2022-09-27 15:39:50 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внешний HDD не найден
+2022-09-27 15:39:50 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hdd_check: Внутренний HDD найден
+2022-09-27 15:39:50 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка наличия 2-х Flash накопителей на устройстве
+2022-09-27 15:40:11 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  flash_check: По крайней мере один flash накопитель не определился, возможно, USB порты неисправны
+2022-09-27 15:40:11 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Проверка работоспособности портов на устройстве
+2022-09-27 15:40:41 - ERROR - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  ports_check: Порты не прошли проверку
+2022-09-27 15:40:41 - INFO - СТЕНД_ДИАГНОСТИКИ -  RS102001180001  -  1  -  hw_check: Создание протокола проверки изделия для устройства
+2022-09-27 15:40:43 - ERROR - СТЕНД_ПСИ -  RS102001180001  -  1  -  run: Устройство закончило работу с ошибками АП: Внешний HDD не найден, Внутренний HDD найден, По крайней мере один flash накопитель не определился, возможно, USB порты неисправны, 100% packet loss
