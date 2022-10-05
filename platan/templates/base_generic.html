@@ -41,6 +41,12 @@
                             <li><a href="{% url 'index' %}">Главная страница</a></li>
                         {% endif %}
 
+                        {% if request.path == '/generate-serial-numbers/' %}
+                            <li><a class="active" href="{% url 'generate-serial-numbers' %}">Генерация серийных номеров</a></li>
+                        {% else %}
+                            <li><a href="{% url 'generate-serial-numbers' %}">Генерация серийных номеров</a></li>
+                        {% endif %}
+
                         {% if request.path == '/stand-visual-inspection/' %}
                             <li><a class="active" href="{% url 'stand-visual-inspection' %}">Стенд визуального осмотра</a></li>
                         {% else %}
