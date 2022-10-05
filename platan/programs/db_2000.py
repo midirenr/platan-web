@@ -213,7 +213,7 @@ def create_device_and_write_serial_num_pcb_and_reserve_macs(engine, serial_num_b
     return snmac_list
 
 
-# create_device_and_write_serial_num_pcb_and_reserve_macs(engine, 'RS102001180300')
+# create_device_and_write_serial_num_pcb_and_reserve_macs(engine, 'RS1020011A0118')
 
 
 def update_diag(engine, serial_num_board):

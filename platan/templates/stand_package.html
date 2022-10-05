@@ -8,25 +8,13 @@
 
 {% block page_name %}<div align="center">Стенд упаковки</div>{% endblock %}
 
-{% block content-blocks %}
-
-<div class="left" id="board-case-left">
-
-</div>
-
-<div class="middle" id="board-case-middle">
-    <!-- RS1010011900021 -->
-    <form method="post">
-        {% csrf_token %}
-        <div align="center">Отсканируйте серийный номер изделия</div>
-        {{ form.device_serial_number }}
-        {{ form.device_serial_number.errors }}
-        <button type="submit" id="btn_device_package" name="submit_btn">Начать</button>
-    </form>
-</div>
-
-<div class="right" id="board-case-right">
-
-</div>
+{% block middle %}
+<form method="post">
+    {% csrf_token %}
+    <div align="center">Отсканируйте серийный номер изделия</div>
+    {{ form.device_serial_number }}
+    {{ form.device_serial_number.errors }}
+    <button type="submit" id="btn_device_package" name="submit_btn">Начать</button>
+</form>
 
 {% endblock %}

@@ -42,7 +42,7 @@ def print_sticker(serial_number, modification):
     qr_name = f'stickers/{serial_number}.png'
     img.save(qr_name)
 
-    document = MailMerge('platan/programs/stickers/sticker_template.docx')
+    document = MailMerge('stickers/sticker_template.docx')
 
     document.merge(
         Protocol_Date='{:%d.%m.%Y}'.format(date.today()),
@@ -83,7 +83,7 @@ def convert_docx_to_pdf_package(input_docx):
 
 
 def print_sticker_passport(serial_number):
-    document = MailMerge('platan/programs/stickers/passport_template.docx')
+    document = MailMerge('stickers/passport_template.docx')
 
     document.merge(
         Serial_Num=serial_number,
@@ -100,8 +100,8 @@ def convert_docx_to_pdf_passport(input_docx_passport):
     process3 = subprocess.Popen([libre_office, '--headless', '--convert-to', 'pdf', '--outdir', 'stickers', input_docx_passport])
     process3.communicate()
     os.remove(f'{input_docx_passport}')
-    input_file = f'platan/programs/stickers/{input_docx_passport}.pdf'
-    output_file = f'platan/programs/stickers/{input_docx_passport}_print.pdf'
+    input_file = f'stickers/{input_docx_passport}.pdf'
+    output_file = f'stickers/{input_docx_passport}_print.pdf'
     file_handle = fitz.open(input_file)
     pages_list = [0]
     file_handle.select(pages_list)
