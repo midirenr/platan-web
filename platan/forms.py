@@ -143,9 +143,14 @@ class StandVisualInspection(forms.Form):
 
 
 class StandDiagnostic(forms.Form):
-    CHOICES = zip(range(1,6), range(1, 6))
+    CHOICES_COUNT = zip(range(1,6), range(1, 6))
+    CHOICES_TYPE = (
+        ('RS', 'Сервисный маршрутизатор'),
+        ('RB', 'Граничный маршрутизатор'),
+    )
 
-    board_count = forms.ChoiceField(choices=CHOICES)
+    diagnostic_device_type = forms.ChoiceField(choices=CHOICES_TYPE)
+    board_count = forms.ChoiceField(choices=CHOICES_COUNT)
     # board_serial_number_1 = forms.CharField(max_length=14)
     board_serial_number_1 = forms.CharField(widget=forms.TextInput(), max_length=14)
     board_serial_number_2 = forms.CharField(widget=forms.TextInput(

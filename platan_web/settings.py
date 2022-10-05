@@ -118,6 +118,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+IMAGES_URL = 'images/'
+
 LOGIN_REDIRECT_URL = '/login/'
 
 # Default primary key field type

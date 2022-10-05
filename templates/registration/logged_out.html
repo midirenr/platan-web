@@ -1,20 +1,8 @@
 {% extends "base_generic.html" %}
 
-{% block content-blocks %}
-
-<div class="left" id="stand-diagnostic-left">
-
-</div>
-
-<div class="middle" id="stand-diagnostic-middle">
-    <p>Вы вышли из своего аккаунта!</p>
-
-    <a href="{% url 'login'%}">Нажмите здесь чтобы авторизоваться повторно.</a>
-</div>
-
-<div class="right" id="stand-diagnostic-right">
-
-</div>
+{% block middle %}
+<p>Вы вышли из своего аккаунта!</p>
+<a href="{% url 'login'%}">Нажмите здесь чтобы авторизоваться повторно.</a>
 
 <script>
     $(document).ready(function()

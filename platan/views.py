@@ -21,6 +21,17 @@ from .programs import stand_pci
 # Create your views here.
 
 
+def index(request):
+    return render(
+        request,
+        'index.html',
+        context=
+        {
+
+        },
+    )
+
+
 @group_required('Техническое Бюро')
 def generate_serial_numbers_page(request):
     form = GenerateSerialNumbersForm()
@@ -38,23 +49,17 @@ def generate_serial_numbers_page(request):
 
             generate_serial_number.generate_serial_numbers(device_type, modification_type, detail_type, place_of_production, count, current_time)
 
-            print('ФОРМА ЗАПОЛНЕНА ПРАВИЛЬНО')
-            print(form.cleaned_data['device_type'])
-            print(form.cleaned_data['modification_type'])
-            print(form.cleaned_data['detail_type'])
-            print(form.cleaned_data['place_of_production'])
-            print(form.cleaned_data['count'])
-
             filename1 = f'SerialNumbers/{device_type}/{modification_type}/{detail_type}/serial_number_for_{modification_type}/{detail_type}({current_time}).txt'
+            """
             filename2 = f'QRcode/{device_type}/{modification_type}/{detail_type}/qrcode-{detail_type}-{current_time}/qrcode-{detail_type}-{current_time}.pdf'
 
             zipObject = ZipFile('СерийныеНомера+QRкоды.zip', 'w')
             zipObject.write(filename1)
             zipObject.write(filename2)
             zipObject.close()
+            """
 
-            return FileResponse(open('СерийныеНомера+QRкоды.zip', 'rb'), as_attachment=True)
-            # return redirect('generate-serial-numbers')
+            return FileResponse(open(filename1, 'rb'), as_attachment=True)
 
     return render(
         request,

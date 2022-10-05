@@ -25,4 +25,4 @@ urlpatterns = [
     path('', include('platan.urls')),
     path('', include('django.contrib.auth.urls')),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_URL) + static(settings.IMAGES_URL, document_root=settings.IMAGES_URL)

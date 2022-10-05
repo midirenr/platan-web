@@ -1,0 +1,27 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+<title>Главная страница</title>
+{% endblock %}
+
+{% block page_name %}<div align="center">Главная страница</div>{% endblock %}
+
+{% block middle %}
+
+<table>
+    <tr>
+        <td align="center"><a title="Генерация серийных номеров" href="{% url 'generate-serial-numbers' %}"><img src="/images/generate-serial-numbers.png" width="20%"><p>Генерация серийных номеров</a></td>
+        <td align="center"><a title="Стенд визуального осмотра" href="{% url 'stand-visual-inspection' %}"><img src="/images/stand-visual-inspection.png" width="20%"><p>Стенд визуального осмотра</a></td>
+        <td align="center"><a title="Стенд диагностики" href="{% url 'stand-diagnostic' %}"><img src="/images/stand-diagnostic.png" width="20%"><p>Стенд диагностики</a></td>
+    </tr>
+
+    <tr>
+        <td align="center"><a title="Стенд сборки" href="{% url 'stand-board-case' %}"><img src="/images/stand-board-case.png" width="20%"><p>Стенд сборки</a></td>
+        <td align="center"><a title="Стенд ПСИ" href="{% url 'stand-pci' %}"><img src="/images/stand-pci.png" width="20%"><p>Стенд ПСИ</a></td>
+        <td align="center"><a title="Стенд упаковки" href="{% url 'stand-package' %}"><img src="/images/stand-package.png" width="20%"><p>Стенд упаковки</a></td>
+    </tr>
+</table>
+
+{% endblock %}

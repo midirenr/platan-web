@@ -8,13 +8,7 @@
 
 {% block page_name %}<div align="center">Авторизация</div>{% endblock %}
 
-{% block content-blocks %}
-
-<div class="left" id="login-left">
-
-</div>
-
-<div class="middle" id="login-middle" align="center">
+{% block middle %}
     {% if form.errors %}
         <p>Ваш логин или пароль введён неправильно! Повторите попытку.</p>
     {% endif %}
@@ -67,22 +61,10 @@
         {% endif %}
     {% endif %}
 
-
-</div>
-
-<div class="right" id="login-right">
-
-</div>
-
 <script>
     $(document).ready(function()
     {
         $('.login').remove();
-
-    //    if ($('.username'))
-    //    {
-    //        $('#login-form').remove();
-    //    };
     });
 </script>
 

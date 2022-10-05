@@ -8,51 +8,56 @@
 
 {% block page_name %}<div align="center">Стенд диагностики</div>{% endblock %}
 
-{% block content-blocks %}
-
-<div class="left" id="stand-diagnostic-left">
-
-</div>
-
-<div class="middle" id="stand-diagnostic-middle">
-    <form method="post" id="diagnostic-form">
-        {% csrf_token %}
-        <div id="diag-left-frame">
-            <div align="center"><b>Выберите количество устройств</b></div>
-            {{ form.board_count }}
-            <div id="board-container-1">
-                {{ form.board_serial_number_1 }}
-                <div class="errors" id="board_serial_number_1_error">{{ form.board_serial_number_1.errors.as_text }}</div>
-            </div>
-            <div id="board-container-2">
-                {{ form.board_serial_number_2 }}
-                <div class="errors" id="board_serial_number_2_error">{{ form.board_serial_number_2.errors.as_text }}</div>
-            </div>
-            <div id="board-container-3">
-                {{ form.board_serial_number_3 }}
-                <div class="errors" id="board_serial_number_3_error">{{ form.board_serial_number_3.errors.as_text }}</div>
-            </div>
-            <div id="board-container-4">
-                {{ form.board_serial_number_4 }}
-                <div class="errors" id="board_serial_number_4_error">{{ form.board_serial_number_4.errors.as_text }}</div>
-            </div>
-            <div id="board-container-5">
-                {{ form.board_serial_number_5 }}
-                <div class="errors" id="board_serial_number_5_error">{{ form.board_serial_number_5.errors.as_text }}</div>
-            </div>
-            <button type="submit" name="diagnostic_start" id="btn_diagnostic_start">Старт Диагностики</button>
+{% block middle %}
+<form method="post" id="diagnostic-form">
+    {% csrf_token %}
+    <div id="diag-left-frame">
+        <div align="center"><b>Выберите тип устройства</b></div>
+        {{ form.diagnostic_device_type }}
+        <div align="center"><b>Выберите количество устройств</b></div>
+        {{ form.board_count }}
+        <div id="board-container-1">
+            {{ form.board_serial_number_1 }}
+            <div align="left" class="errors" id="board_serial_number_1_error">{{ form.board_serial_number_1.errors.as_text }}</div>
+        </div>
+        <div id="board-container-2">
+            {{ form.board_serial_number_2 }}
+            <div align="left" class="errors" id="board_serial_number_2_error">{{ form.board_serial_number_2.errors.as_text }}</div>
+        </div>
+        <div id="board-container-3">
+            {{ form.board_serial_number_3 }}
+            <div align="left" class="errors" id="board_serial_number_3_error">{{ form.board_serial_number_3.errors.as_text }}</div>
+        </div>
+        <div id="board-container-4">
+            {{ form.board_serial_number_4 }}
+            <div align="left" class="errors" id="board_serial_number_4_error">{{ form.board_serial_number_4.errors.as_text }}</div>
+        </div>
+        <div id="board-container-5">
+            {{ form.board_serial_number_5 }}
+            <div align="left" class="errors" id="board_serial_number_5_error">{{ form.board_serial_number_5.errors.as_text }}</div>
+        </div>
+        <button type="submit" name="diagnostic_start" id="btn_diagnostic_start">Старт Диагностики</button>
         </div>
 
-        <div align="center" id="diag-right-frame">
-            <b>Окно вывода</b>
-            {{ form.output }}
-        </div>
-    </form>
-</div>
+    <div align="center" id="diag-right-frame">
+        <b>Окно вывода</b>
+        {{ form.output }}
+    </div>
+</form>
 
-<div class="right" id="stand-diagnostic-right">
+<script>
+    function clearErrors() {
+        $('#board_serial_number_1_error').remove();
+        $('#board_serial_number_2_error').remove();
+        $('#board_serial_number_3_error').remove();
+        $('#board_serial_number_4_error').remove();
+        $('#board_serial_number_5_error').remove();
+    }
+</script>
 
-</div>
+<script>
+    $('#btn_diagnostic_start').click(clearErrors);
+</script>
 
 <script>
     function UpdateEntries() {

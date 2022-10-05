@@ -22,25 +22,71 @@
 
         <div class="right-header">
             {% if user.is_authenticated %}
-                <a class="username" href="">Имя пользователя: {{ user.get_username }}</a>
-                <a class="logout" href="{% url 'logout'%}">Выход</a>
+                <div align="right"><a class="username" href="">Имя пользователя: {{ user.get_username }}</a></div>
+                <div align="right"><a class="logout" href="{% url 'logout'%}">Выход</a></div>
             {% else %}
-                <a class="login" href="">Авторизация</a>
+                <div align="right"><a class="login" href="{% url 'login' %}">Авторизация</a></div>
             {% endif %}
         </div>
     </div>
 
     <div class="content-container">
+        {% if user.is_authenticated %}
+            <div class="left">
+                <form class="menu">
+                    <ul id="navigation" class="sidebar">
+                        {% if request.path == '/' %}
+                            <li><a class="active" href="{% url 'index' %}">Главная страница</a></li>
+                        {% else %}
+                            <li><a href="{% url 'index' %}">Главная страница</a></li>
+                        {% endif %}
 
-        {% block content-blocks %}
+                        {% if request.path == '/stand-visual-inspection/' %}
+                            <li><a class="active" href="{% url 'stand-visual-inspection' %}">Стенд визуального осмотра</a></li>
+                        {% else %}
+                            <li><a href="{% url 'stand-visual-inspection' %}">Стенд визуального осмотра</a></li>
+                        {% endif %}
 
-        <!-- <div class="middle">
-            {% block content %}
+                        {% if request.path == '/stand-diagnostic/' %}
+                            <li><a class="active" href="{% url 'stand-diagnostic' %}">Стенд диагностики</a></li>
+                        {% else %}
+                            <li><a href="{% url 'stand-diagnostic' %}">Стенд диагностики</a></li>
+                        {% endif %}
 
-            {% endblock %} -->
+                        {% if request.path == '/stand-board-case/' %}
+                            <li><a class="active" href="{% url 'stand-board-case' %}">Стенд сборки</a></li>
+                        {% else %}
+                            <li><a href="{% url 'stand-board-case' %}">Стенд сборки</a></li>
+                        {% endif %}
 
-        {% endblock %}
+                        {% if request.path == '/stand-pci/' %}
+                            <li><a class="active" href="{% url 'stand-pci' %}">Стенд ПСИ</a></li>
+                        {% else %}
+                            <li><a href="{% url 'stand-pci' %}">Стенд ПСИ</a></li>
+                        {% endif %}
 
+                        {% if request.path == '/stand-package/' %}
+                            <li><a class="active" href="{% url 'stand-package' %}">Стенд упаковки</a></li>
+                        {% else %}
+                            <li><a href="{% url 'stand-package' %}">Стенд упаковки</a></li>
+                        {% endif %}
+                    </ul>
+                </form>
+            </div>
+        {% else %}
+            <div class="left-logout">
+
+            </div>
+        {% endif %}
+
+        <div class="middle" align="center">
+            {% block middle %}
+            {% endblock %}
+        </div>
+
+        <div class="right">
+
+        </div>
     </div>
 
 </body>
