@@ -26,8 +26,12 @@ html,body
     width: 33.33%;
     font-size:      4.5vmin;
     color:          #f1f5d9;
-    padding-top:    10px;
     white-space: nowrap;
+}
+
+#header-middle-title
+{
+    padding: 15px 0;
 }
 
 .right-header
