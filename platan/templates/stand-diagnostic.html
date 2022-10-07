@@ -16,25 +16,57 @@
         {{ form.diagnostic_device_type }}
         <div align="center"><b>Выберите количество устройств</b></div>
         {{ form.board_count }}
-        <div id="board-container-1">
-            {{ form.board_serial_number_1 }}
-            <div align="left" class="errors" id="board_serial_number_1_error">{{ form.board_serial_number_1.errors.as_text }}</div>
-        </div>
-        <div id="board-container-2">
-            {{ form.board_serial_number_2 }}
-            <div align="left" class="errors" id="board_serial_number_2_error">{{ form.board_serial_number_2.errors.as_text }}</div>
-        </div>
-        <div id="board-container-3">
-            {{ form.board_serial_number_3 }}
-            <div align="left" class="errors" id="board_serial_number_3_error">{{ form.board_serial_number_3.errors.as_text }}</div>
-        </div>
-        <div id="board-container-4">
-            {{ form.board_serial_number_4 }}
-            <div align="left" class="errors" id="board_serial_number_4_error">{{ form.board_serial_number_4.errors.as_text }}</div>
-        </div>
-        <div id="board-container-5">
-            {{ form.board_serial_number_5 }}
-            <div align="left" class="errors" id="board_serial_number_5_error">{{ form.board_serial_number_5.errors.as_text }}</div>
+        <div class="board-serial-numbers">
+            <div align="right" id="board-container-1">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/board_1.jpg">
+                    </span>
+                </div>
+                {{ form.board_serial_number_1 }}
+                <div align="left" class="errors" id="board_serial_number_1_error">{{ form.board_serial_number_1.errors.as_text }}</div>
+            </div>
+            <div align="right" id="board-container-2">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/board_1.jpg">
+                    </span>
+                </div>
+                {{ form.board_serial_number_2 }}
+                <div align="left" class="errors" id="board_serial_number_2_error">{{ form.board_serial_number_2.errors.as_text }}</div>
+            </div>
+            <div align="right" id="board-container-3">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/board_1.jpg">
+                    </span>
+                </div>
+                {{ form.board_serial_number_3 }}
+                <div align="left" class="errors" id="board_serial_number_3_error">{{ form.board_serial_number_3.errors.as_text }}</div>
+            </div>
+            <div align="right" id="board-container-4">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/board_1.jpg">
+                    </span>
+                </div>
+                {{ form.board_serial_number_4 }}
+                <div align="left" class="errors" id="board_serial_number_4_error">{{ form.board_serial_number_4.errors.as_text }}</div>
+            </div>
+            <div align="right" id="board-container-5">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/board_1.jpg">
+                    </span>
+                </div>
+                {{ form.board_serial_number_5 }}
+                <div align="left" class="errors" id="board_serial_number_5_error">{{ form.board_serial_number_5.errors.as_text }}</div>
+            </div>
         </div>
         <button type="submit" name="diagnostic_start" id="btn_diagnostic_start">Старт Диагностики</button>
         </div>
@@ -62,86 +94,75 @@
 <script>
     function UpdateEntries() {
         var selectedCount = $('#id_board_count').val();
-        var board_serial_number_1 = document.getElementById('id_board_serial_number_1');
-        var board_serial_number_2 = document.getElementById('id_board_serial_number_2');
-        var board_serial_number_3 = document.getElementById('id_board_serial_number_3');
-        var board_serial_number_4 = document.getElementById('id_board_serial_number_4');
-        var board_serial_number_5 = document.getElementById('id_board_serial_number_5');
 
         if(selectedCount == 1)
         {
-            board_serial_number_2.setAttribute('type', 'hidden');
-            board_serial_number_2.removeAttribute('required');
-            board_serial_number_3.setAttribute('type', 'hidden');
-            board_serial_number_3.removeAttribute('required');
-            board_serial_number_4.setAttribute('type', 'hidden');
-            board_serial_number_4.removeAttribute('required');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_2.value = '';
-            board_serial_number_2_error.setAttribute('hidden', 'True');
-            board_serial_number_3.value = '';
-            board_serial_number_3_error.setAttribute('hidden', 'True');
-            board_serial_number_4.value = '';
-            board_serial_number_4_error.setAttribute('hidden', 'True');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#board-container-2').attr('hidden', '');
+            $('#board-container-3').attr('hidden', '');
+            $('#board-container-4').attr('hidden', '');
+            $('#board-container-5').attr('hidden', '');
+            $('#id_board_serial_number_2').removeAttr('required', '');
+            $('#id_board_serial_number_3').removeAttr('required', '');
+            $('#id_board_serial_number_4').removeAttr('required', '');
+            $('#id_board_serial_number_5').removeAttr('required', '');
+            $('#id_board_serial_number_2').val('')
+            $('#board_serial_number_2_error').html('')
+            $('#id_board_serial_number_3').val('')
+            $('#board_serial_number_3_error').html('')
+            $('#id_board_serial_number_4').val('')
+            $('#board_serial_number_4_error').html('')
+            $('#id_board_serial_number_5').val('')
+            $('#board_serial_number_5_error').html('')
         }
         else if(selectedCount == 2)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.setAttribute('type', 'hidden');
-            board_serial_number_3.removeAttribute('required');
-            board_serial_number_4.setAttribute('type', 'hidden');
-            board_serial_number_4.removeAttribute('required');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_3.value = '';
-            board_serial_number_3_error.setAttribute('hidden', 'True');
-            board_serial_number_4.value = '';
-            board_serial_number_4_error.setAttribute('hidden', 'True');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#id_board_serial_number_2').attr('required', '');
+            $('#board-container-2').removeAttr('hidden');
+            $('#board-container-3').attr('hidden', '');
+            $('#board-container-4').attr('hidden', '');
+            $('#board-container-5').attr('hidden', '');
+            $('#id_board_serial_number_3').val('')
+            $('#board_serial_number_3_error').html('')
+            $('#id_board_serial_number_4').val('')
+            $('#board_serial_number_4_error').html('')
+            $('#id_board_serial_number_5').val('')
+            $('#board_serial_number_5_error').html('')
         }
         else if(selectedCount == 3)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.removeAttribute('type');
-            board_serial_number_3.setAttribute('required', 'True');
-            board_serial_number_4.setAttribute('type', 'hidden');
-            board_serial_number_4.removeAttribute('required');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_4.value = '';
-            board_serial_number_4_error.setAttribute('hidden', 'True');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#id_board_serial_number_2').attr('required', '');
+            $('#id_board_serial_number_3').attr('required', '');
+            $('#board-container-2').removeAttr('hidden');
+            $('#board-container-3').removeAttr('hidden');
+            $('#board-container-4').attr('hidden', '');
+            $('#board-container-5').attr('hidden', '');
+            $('#id_board_serial_number_4').val('')
+            $('#board_serial_number_4_error').html('')
+            $('#id_board_serial_number_5').val('')
+            $('#board_serial_number_5_error').html('')
         }
         else if(selectedCount == 4)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.removeAttribute('type');
-            board_serial_number_3.setAttribute('required', 'True');
-            board_serial_number_4.removeAttribute('type');
-            board_serial_number_4.setAttribute('required', 'True');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#id_board_serial_number_2').attr('required', '');
+            $('#id_board_serial_number_3').attr('required', '');
+            $('#id_board_serial_number_4').attr('required', '');
+            $('#board-container-2').removeAttr('hidden');
+            $('#board-container-3').removeAttr('hidden');
+            $('#board-container-4').removeAttr('hidden');
+            $('#board-container-5').attr('hidden', '');
+            $('#id_board_serial_number_5').val('')
+            $('#board_serial_number_5_error').html('')
         }
         else if(selectedCount == 5)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.removeAttribute('type');
-            board_serial_number_3.setAttribute('required', 'True');
-            board_serial_number_4.removeAttribute('type');
-            board_serial_number_4.setAttribute('required', 'True');
-            board_serial_number_5.removeAttribute('type');
-            board_serial_number_5.setAttribute('required', 'True');
+            $('#id_board_serial_number_2').attr('required', '');
+            $('#id_board_serial_number_3').attr('required', '');
+            $('#id_board_serial_number_4').attr('required', '');
+            $('#id_board_serial_number_5').attr('required', '');
+            $('#board-container-2').removeAttr('hidden');
+            $('#board-container-3').removeAttr('hidden');
+            $('#board-container-4').removeAttr('hidden');
+            $('#board-container-5').removeAttr('hidden');
         }
     }
 </script>

@@ -155,22 +155,18 @@ class StandDiagnostic(forms.Form):
     board_serial_number_1 = forms.CharField(widget=forms.TextInput(), max_length=14)
     board_serial_number_2 = forms.CharField(widget=forms.TextInput(
         attrs={
-            'type': 'hidden',
             'maxlength': '14',
         }), required=False)
     board_serial_number_3 = forms.CharField(widget=forms.TextInput(
         attrs={
-            'type': 'hidden',
             'maxlength': '14',
         }), required=False)
     board_serial_number_4 = forms.CharField(widget=forms.TextInput(
         attrs={
-            'type': 'hidden',
             'maxlength': '14',
         }), required=False)
     board_serial_number_5 = forms.CharField(widget=forms.TextInput(
         attrs={
-            'type': 'hidden',
             'maxlength': '14',
         }), required=False)
 
@@ -360,5 +356,221 @@ class StandDiagnostic(forms.Form):
                     self.errors['board_serial_number_5'] = self.error_class([f'Серийный номер платы совпадает с другим серийным номером!'])
             else:
                 self.errors['board_serial_number_5'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+        return self.cleaned_data
+
+
+class StandPCI(forms.Form):
+    CHOICES_COUNT = zip(range(1,6), range(1, 6))
+    CHOICES_TYPE = (
+        ('RS', 'Сервисный маршрутизатор'),
+        ('RB', 'Граничный маршрутизатор'),
+    )
+
+    pci_device_type = forms.ChoiceField(choices=CHOICES_TYPE)
+    router_count = forms.ChoiceField(choices=CHOICES_COUNT)
+    router_serial_number_1 = forms.CharField(widget=forms.TextInput(), max_length=14)
+    router_serial_number_2 = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'maxlength': '14',
+        }), required=False)
+    router_serial_number_3 = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'maxlength': '14',
+        }), required=False)
+    router_serial_number_4 = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'maxlength': '14',
+        }), required=False)
+    router_serial_number_5 = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'maxlength': '14',
+        }), required=False)
+
+    output = forms.CharField(widget=forms.Textarea(attrs={
+        'style': 'resize:none;',
+        'readonly': True,
+    }), required=False)
+
+    def clean(self):
+        super(StandPCI, self).clean()
+
+        router_count = self.cleaned_data['router_count']
+
+        router_serial_number_1 = self.cleaned_data['router_serial_number_1']
+        router_serial_number_2 = self.cleaned_data['router_serial_number_2']
+        router_serial_number_3 = self.cleaned_data['router_serial_number_3']
+        router_serial_number_4 = self.cleaned_data['router_serial_number_4']
+        router_serial_number_5 = self.cleaned_data['router_serial_number_5']
+
+        if router_count == '1':
+            if len(router_serial_number_1) == 14:
+                if router_serial_number_1[4:6] == '10':
+                    if check_sn_r(engine, router_serial_number_1) == True:
+                        self.errors['router_serial_number_1'] = self.error_class([f'Устройство с серийным номером {router_serial_number_1} отсутствует в Базе Данных!\nОтсканируйте заново.'])
+                else:
+                    self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+            else:
+                self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+        elif router_count == '2':
+            if len(router_serial_number_1) == 14:
+                if router_serial_number_1[4:6] == '10':
+                    if check_sn_r(engine, router_serial_number_1) == 0:
+                        self.errors['router_serial_number_1'] = self.error_class([f'Устройство с серийным номером {router_serial_number_1} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+            else:
+                self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_2) == 14:
+                if router_serial_number_1 != router_serial_number_2:
+                    if router_serial_number_2[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_2) == 0:
+                            self.errors['router_serial_number_2'] = self.error_class([f'Устройство с серийным номером {router_serial_number_2} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+        elif router_count == '3':
+            if len(router_serial_number_1) == 14:
+                if router_serial_number_1[4:6] == '10':
+                    if check_sn_r(engine, router_serial_number_1) == 0:
+                        self.errors['router_serial_number_1'] = self.error_class([f'Устройство с серийным номером {router_serial_number_1} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+            else:
+                self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_2) == 14:
+                if router_serial_number_2 != router_serial_number_1:
+                    if router_serial_number_2[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_2) == 0:
+                            self.errors['router_serial_number_2'] = self.error_class([f'Устройство с серийным номером {router_serial_number_2} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_3) == 14:
+                if router_serial_number_3 != router_serial_number_1 and router_serial_number_3 != router_serial_number_2:
+                    if router_serial_number_3[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_3) == 0:
+                            self.errors['router_serial_number_3'] = self.error_class([f'Устройство с серийным номером {router_serial_number_3} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+        elif router_count == '4':
+            if len(router_serial_number_1) == 14:
+                if router_serial_number_1[4:6] == '10':
+                    if check_sn_r(engine, router_serial_number_1) == 0:
+                        self.errors['router_serial_number_1'] = self.error_class([f'Устройство с серийным номером {router_serial_number_1} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+            else:
+                self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_2) == 14:
+                if router_serial_number_2 != router_serial_number_1:
+                    if router_serial_number_2[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_2) == 0:
+                            self.errors['router_serial_number_2'] = self.error_class([f'Устройство с серийным номером {router_serial_number_2} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_3) == 14:
+                if router_serial_number_3 != router_serial_number_1 and router_serial_number_3 != router_serial_number_2:
+                    if router_serial_number_3[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_3) == 0:
+                            self.errors['router_serial_number_3'] = self.error_class([f'Устройство с серийным номером {router_serial_number_3} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_4) == 14:
+                if router_serial_number_4 != router_serial_number_1 and router_serial_number_4 != router_serial_number_2 and router_serial_number_4 != router_serial_number_3:
+                    if router_serial_number_4[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_4) == 0:
+                            self.errors['router_serial_number_4'] = self.error_class([f'Устройство с серийным номером {router_serial_number_4} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_4'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_4'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_4'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+        elif router_count == '5':
+            if len(router_serial_number_1) == 14:
+                if router_serial_number_1[4:6] == '10':
+                    if check_sn_r(engine, router_serial_number_1) == 0:
+                        self.errors['router_serial_number_1'] = self.error_class([f'Устройство с серийным номером {router_serial_number_1} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+            else:
+                self.errors['router_serial_number_1'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_2) == 14:
+                if router_serial_number_2 != router_serial_number_1:
+                    if router_serial_number_2[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_2) == 0:
+                            self.errors['router_serial_number_2'] = self.error_class([f'Устройство с серийным номером {router_serial_number_2} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_2'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_3) == 14:
+                if router_serial_number_3 != router_serial_number_1 and router_serial_number_3 != router_serial_number_2:
+                    if router_serial_number_3[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_3) == 0:
+                            self.errors['router_serial_number_3'] = self.error_class([f'Устройство с серийным номером {router_serial_number_3} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер устройство совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_3'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_4) == 14:
+                if router_serial_number_4 != router_serial_number_1 and router_serial_number_4 != router_serial_number_2 and router_serial_number_4 != router_serial_number_3:
+                    if router_serial_number_4[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_4) == 0:
+                            self.errors['router_serial_number_4'] = self.error_class([f'Устройство с серийным номером {router_serial_number_4} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_4'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_4'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_4'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+
+            if len(router_serial_number_5) == 14:
+                if router_serial_number_5 != router_serial_number_1 and router_serial_number_5 != router_serial_number_2 and router_serial_number_5 != router_serial_number_3 and router_serial_number_5 != router_serial_number_4:
+                    if router_serial_number_5[4:6] == '10':
+                        if check_sn_r(engine, router_serial_number_5) == 0:
+                            self.errors['router_serial_number_5'] = self.error_class([f'Устройство с серийным номером {router_serial_number_5} отсутствует в Базе Данных!\nОтсканируйте повторно.'])
+                    else:
+                        self.errors['router_serial_number_5'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
+                else:
+                    self.errors['router_serial_number_5'] = self.error_class([f'Серийный номер устройства совпадает с другим серийным номером!'])
+            else:
+                self.errors['router_serial_number_5'] = self.error_class([f'Серийный номер указан неправильно!\nОтсканируйте повторно.'])
 
         return self.cleaned_data

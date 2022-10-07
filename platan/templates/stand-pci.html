@@ -13,28 +13,60 @@
     {% csrf_token %}
     <div id="pci-left-frame">
         <div align="center"><b>Выберите тип устройства</b></div>
-        {{ form.diagnostic_device_type }}
+        {{ form.pci_device_type }}
         <div align="center"><b>Выберите количество устройств</b></div>
-        {{ form.board_count }}
-        <div id="board-container-1">
-            {{ form.board_serial_number_1 }}
-            <div align="left" class="errors" id="board_serial_number_1_error">{{ form.board_serial_number_1.errors.as_text }}</div>
-        </div>
-        <div id="board-container-2">
-            {{ form.board_serial_number_2 }}
-            <div align="left" class="errors" id="board_serial_number_2_error">{{ form.board_serial_number_2.errors.as_text }}</div>
-        </div>
-        <div id="board-container-3">
-            {{ form.board_serial_number_3 }}
-            <div align="left" class="errors" id="board_serial_number_3_error">{{ form.board_serial_number_3.errors.as_text }}</div>
-        </div>
-        <div id="board-container-4">
-            {{ form.board_serial_number_4 }}
-            <div align="left" class="errors" id="board_serial_number_4_error">{{ form.board_serial_number_4.errors.as_text }}</div>
-        </div>
-        <div id="board-container-5">
-            {{ form.board_serial_number_5 }}
-            <div align="left" class="errors" id="board_serial_number_5_error">{{ form.board_serial_number_5.errors.as_text }}</div>
+        {{ form.router_count }}
+        <div class="router-serial-numbers">
+            <div align="right" id="router-container-1">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/sticker_1.jpg">
+                    </span>
+                </div>
+                {{ form.router_serial_number_1 }}
+                <div align="left" class="errors" id="router_serial_number_1_error">{{ form.router_serial_number_1.errors.as_text }}</div>
+            </div>
+            <div align="right" id="router-container-2">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/sticker_1.jpg">
+                    </span>
+                </div>
+                {{ form.router_serial_number_2 }}
+                <div align="left" class="errors" id="router_serial_number_2_error">{{ form.router_serial_number_2.errors.as_text }}</div>
+            </div>
+            <div align="right" id="router-container-3">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/sticker_1.jpg">
+                    </span>
+                </div>
+                {{ form.router_serial_number_3 }}
+                <div align="left" class="errors" id="router_serial_number_3_error">{{ form.router_serial_number_3.errors.as_text }}</div>
+            </div>
+            <div align="right" id="router-container-4">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/sticker_1.jpg">
+                    </span>
+                </div>
+                {{ form.router_serial_number_4 }}
+                <div align="left" class="errors" id="router_serial_number_4_error">{{ form.router_serial_number_4.errors.as_text }}</div>
+            </div>
+            <div align="right" id="router-container-5">
+                <div align="center" class="tooltip">
+                    <img class="info-image" align="center" src="/images/info.png" width="3%">
+                    <span class="tooltiptext">
+                        <img width="400" src="/images/sticker_1.jpg">
+                    </span>
+                </div>
+                {{ form.router_serial_number_5 }}
+                <div align="left" class="errors" id="router_serial_number_5_error">{{ form.router_serial_number_5.errors.as_text }}</div>
+            </div>
         </div>
         <button type="submit" name="pci_start" id="btn_pci_start">Старт ПСИ</button>
     </div>
@@ -47,11 +79,11 @@
 
 <script>
     function clearErrors() {
-        $('#board_serial_number_1_error').remove();
-        $('#board_serial_number_2_error').remove();
-        $('#board_serial_number_3_error').remove();
-        $('#board_serial_number_4_error').remove();
-        $('#board_serial_number_5_error').remove();
+        $('#router_serial_number_1_error').remove();
+        $('#router_serial_number_2_error').remove();
+        $('#router_serial_number_3_error').remove();
+        $('#router_serial_number_4_error').remove();
+        $('#router_serial_number_5_error').remove();
     }
 </script>
 
@@ -61,87 +93,76 @@
 
 <script>
     function UpdateEntries() {
-        var selectedCount = $('#id_board_count').val();
-        var board_serial_number_1 = document.getElementById('id_board_serial_number_1');
-        var board_serial_number_2 = document.getElementById('id_board_serial_number_2');
-        var board_serial_number_3 = document.getElementById('id_board_serial_number_3');
-        var board_serial_number_4 = document.getElementById('id_board_serial_number_4');
-        var board_serial_number_5 = document.getElementById('id_board_serial_number_5');
+        var selectedCount = $('#id_router_count').val();
 
         if(selectedCount == 1)
         {
-            board_serial_number_2.setAttribute('type', 'hidden');
-            board_serial_number_2.removeAttribute('required');
-            board_serial_number_3.setAttribute('type', 'hidden');
-            board_serial_number_3.removeAttribute('required');
-            board_serial_number_4.setAttribute('type', 'hidden');
-            board_serial_number_4.removeAttribute('required');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_2.value = '';
-            board_serial_number_2_error.setAttribute('hidden', 'True');
-            board_serial_number_3.value = '';
-            board_serial_number_3_error.setAttribute('hidden', 'True');
-            board_serial_number_4.value = '';
-            board_serial_number_4_error.setAttribute('hidden', 'True');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#router-container-2').attr('hidden', '');
+            $('#router-container-3').attr('hidden', '');
+            $('#router-container-4').attr('hidden', '');
+            $('#router-container-5').attr('hidden', '');
+            $('#id_router_serial_number_2').removeAttr('required', '');
+            $('#id_router_serial_number_3').removeAttr('required', '');
+            $('#id_router_serial_number_4').removeAttr('required', '');
+            $('#id_router_serial_number_5').removeAttr('required', '');
+            $('#id_router_serial_number_2').val('')
+            $('#router_serial_number_2_error').html('')
+            $('#id_router_serial_number_3').val('')
+            $('#router_serial_number_3_error').html('')
+            $('#id_router_serial_number_4').val('')
+            $('#router_serial_number_4_error').html('')
+            $('#id_router_serial_number_5').val('')
+            $('#router_serial_number_5_error').html('')
         }
         else if(selectedCount == 2)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.setAttribute('type', 'hidden');
-            board_serial_number_3.removeAttribute('required');
-            board_serial_number_4.setAttribute('type', 'hidden');
-            board_serial_number_4.removeAttribute('required');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_3.value = '';
-            board_serial_number_3_error.setAttribute('hidden', 'True');
-            board_serial_number_4.value = '';
-            board_serial_number_4_error.setAttribute('hidden', 'True');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#id_router_serial_number_2').attr('required', '');
+            $('#router-container-2').removeAttr('hidden');
+            $('#router-container-3').attr('hidden', '');
+            $('#router-container-4').attr('hidden', '');
+            $('#router-container-5').attr('hidden', '');
+            $('#id_router_serial_number_3').val('')
+            $('#router_serial_number_3_error').html('')
+            $('#id_router_serial_number_4').val('')
+            $('#router_serial_number_4_error').html('')
+            $('#id_router_serial_number_5').val('')
+            $('#router_serial_number_5_error').html('')
         }
         else if(selectedCount == 3)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.removeAttribute('type');
-            board_serial_number_3.setAttribute('required', 'True');
-            board_serial_number_4.setAttribute('type', 'hidden');
-            board_serial_number_4.removeAttribute('required');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_4.value = '';
-            board_serial_number_4_error.setAttribute('hidden', 'True');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#id_router_serial_number_2').attr('required', '');
+            $('#id_router_serial_number_3').attr('required', '');
+            $('#router-container-2').removeAttr('hidden');
+            $('#router-container-3').removeAttr('hidden');
+            $('#router-container-4').attr('hidden', '');
+            $('#router-container-5').attr('hidden', '');
+            $('#id_router_serial_number_4').val('')
+            $('#router_serial_number_4_error').html('')
+            $('#id_router_serial_number_5').val('')
+            $('#router_serial_number_5_error').html('')
         }
         else if(selectedCount == 4)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.removeAttribute('type');
-            board_serial_number_3.setAttribute('required', 'True');
-            board_serial_number_4.removeAttribute('type');
-            board_serial_number_4.setAttribute('required', 'True');
-            board_serial_number_5.setAttribute('type', 'hidden');
-            board_serial_number_5.removeAttribute('required');
-            board_serial_number_5.value = '';
-            board_serial_number_5_error.setAttribute('hidden', 'True');
+            $('#id_router_serial_number_2').attr('required', '');
+            $('#id_router_serial_number_3').attr('required', '');
+            $('#id_router_serial_number_4').attr('required', '');
+            $('#router-container-2').removeAttr('hidden');
+            $('#router-container-3').removeAttr('hidden');
+            $('#router-container-4').removeAttr('hidden');
+            $('#router-container-5').attr('hidden', '');
+            $('#id_router_serial_number_5').val('')
+            $('#router_serial_number_5_error').html('')
         }
         else if(selectedCount == 5)
         {
-            board_serial_number_2.removeAttribute('type');
-            board_serial_number_2.setAttribute('required', 'True');
-            board_serial_number_3.removeAttribute('type');
-            board_serial_number_3.setAttribute('required', 'True');
-            board_serial_number_4.removeAttribute('type');
-            board_serial_number_4.setAttribute('required', 'True');
-            board_serial_number_5.removeAttribute('type');
-            board_serial_number_5.setAttribute('required', 'True');
+            $('#id_router_serial_number_2').attr('required', '');
+            $('#id_router_serial_number_3').attr('required', '');
+            $('#id_router_serial_number_4').attr('required', '');
+            $('#id_router_serial_number_5').attr('required', '');
+            $('#router-container-2').removeAttr('hidden');
+            $('#router-container-3').removeAttr('hidden');
+            $('#router-container-4').removeAttr('hidden');
+            $('#router-container-5').removeAttr('hidden');
         }
     }
 </script>
@@ -151,7 +172,7 @@
 </script>
 
 <script>
-    $('#id_board_count').on('change', UpdateEntries);
+    $('#id_router_count').on('change', UpdateEntries);
 </script>
 
 <script>

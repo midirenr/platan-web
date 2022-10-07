@@ -12,11 +12,31 @@
 <form method="post">
     {% csrf_token %}
     <div align="center">Отсканируйте серийный номер платы</div>
-    {{ form.board_serial_number }}
-    {{ form.board_serial_number.errors }}
+    <div id="board-serial-number-container">
+        <div align="center" class="tooltip">
+            <img class="info-image" align="center" src="/images/info.png" width="3%">
+            <span class="tooltiptext">
+                <img width="400" src="/images/board_1.jpg">
+            </span>
+        </div>
+        {{ form.board_serial_number }}
+        <div align="left" class="errors board-case-serial-number-error">
+            {{ form.board_serial_number.errors.as_text }}
+        </div>
+    </div>
     <div align="center">Отсканируйте скрийный номер корпуса</div>
-    {{ form.case_serial_number }}
-    {{ form.case_serial_number.errors }}
+    <div id="case-serial-number-container">
+        <div align="center" class="tooltip">
+            <img class="info-image" align="center" src="/images/info.png" width="3%">
+            <span class="tooltiptext">
+                <img width="400" src="/images/sticker_1.jpg">
+            </span>
+        </div>
+        {{ form.case_serial_number }}
+        <div align="left" class="errors board-case-serial-number-error">
+            {{ form.case_serial_number.errors.as_text }}
+        </div>
+    </div>
     <button type="submit" id="board-case-chain" name="submit_btn">Привязать</button>
 </form>
 

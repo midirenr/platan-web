@@ -12,7 +12,17 @@
 <form method="post">
     {% csrf_token %}
     <div align="center">Отсканируйте серийный номер платы</div>
-        {{ form.board_serial_number }}
+    <div id="info-input-container">
+        <div class="tooltip">
+            <img class="info-image" align="center" src="/images/info.png" width="3%">
+            <span class="tooltiptext">
+                <img width="400" src="/images/board_1.jpg">
+            </span>
+        </div>
+        <div id="input-container">
+            {{ form.board_serial_number }}
+        </div>
+    </div>
         {{ form.board_serial_number.errors }}
     <div>
         <button type="submit" id="btn_board_valid" name="submit_btn_valid">Годная</button>

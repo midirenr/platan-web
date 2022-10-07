@@ -229,16 +229,16 @@ def diagnostic_load_output(request):
 
 @group_required('Стенд ПСИ')
 def stand_pci_page(request):
-    form = StandDiagnostic()
+    form = StandPCI()
 
     if 'pci_start' in request.POST and request.method == 'POST':
-        form = StandDiagnostic(request.POST)
+        form = StandPCI(request.POST)
 
         if form.is_valid():
-            board_count = form.cleaned_data['board_count']
-            board_serial_number = form.cleaned_data['board_serial_number_1']
+            router_count = form.cleaned_data['router_count']
+            router_serial_number = form.cleaned_data['router_serial_number_1']
             os_modification = 'SP'
-            modification_split = board_serial_number[2:4]
+            modification_split = router_serial_number[2:4]
             modification_serial_number_os = modification_split + os_modification
 
             modification_dictionary = {
@@ -259,13 +259,13 @@ def stand_pci_page(request):
             }
             modification = modification_dictionary.get(modification_serial_number_os)
 
-            board_serial_number_list = [form.cleaned_data['board_serial_number_1'],
-                                        form.cleaned_data['board_serial_number_2'],
-                                        form.cleaned_data['board_serial_number_3'],
-                                        form.cleaned_data['board_serial_number_4'],
-                                        form.cleaned_data['board_serial_number_5']]
+            router_serial_number_list = [form.cleaned_data['router_serial_number_1'],
+                                        form.cleaned_data['router_serial_number_2'],
+                                        form.cleaned_data['router_serial_number_3'],
+                                        form.cleaned_data['router_serial_number_4'],
+                                        form.cleaned_data['router_serial_number_5']]
 
-            stand_pci.run(board_count, modification, board_serial_number_list)
+            stand_pci.run(router_count, modification, router_serial_number_list)
 
             return redirect('stand-pci')
 

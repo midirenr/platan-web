@@ -374,23 +374,58 @@ html,body
     width: 30%;
 }
 
-#board-case-chain,
 #id_board_serial_number
 {
+    width: 96%;
+    height: 100%;
+}
+
+#board-case-chain
+{
     width: 100%;
+}
+
+.board-case-serial-number-error
+{
+    width: 94%;
+}
+
+#info-input-container
+{
+    height: 30px;
     margin-bottom: 1%;
+}
+
+#input-container
+{
+    float: right;
+    width: 96%;
+}
+
+.info-image
+{
+    width: 22px;
+    vertical-align: middle;
+}
+
+#board-serial-number-container, #case-serial-number-container
+{
+    margin-bottom: 2%;
 }
 
 #id_case_serial_number
 {
-    width: 100%;
-    margin-bottom: 2%;
+    width: 96%;
 }
 
 #id_device_serial_number
 {
-    width: 100%;
-    margin-bottom: 2%;`
+    width: 96%;
+}
+
+#device-serial-number-error
+{
+    width: 94%;
 }
 
 #btn_device_package
@@ -459,14 +494,14 @@ html,body
 
 #id_diagnostic_device_type
 {
-    width: 90%;
+    width: 88%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#id_board_count
+#id_board_count, #id_router_count
 {
-    width: 90%;
+    width: 88%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -476,9 +511,14 @@ html,body
     margin-bottom: 5%;
 }
 
-#id_board_serial_number_1, #id_board_serial_number_2, #id_board_serial_number_3, #id_board_serial_number_4, #id_board_serial_number_5
+.board-serial-numbers
 {
     width: 88%;
+}
+
+#id_board_serial_number_1, #id_board_serial_number_2, #id_board_serial_number_3, #id_board_serial_number_4, #id_board_serial_number_5
+{
+    width: 86%;
 }
 
 #btn_diagnostic_start
@@ -520,6 +560,33 @@ html,body
     float: left;
 }
 
+#id_pci_device_type
+{
+    width: 88%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.router-serial-numbers
+{
+    width: 88%;
+}
+
+#router-container-1, #router-container-2, #router-container-3, #router-container-4, #router-container-5
+{
+    margin-bottom: 5%;
+}
+
+#id_router_serial_number_1, #id_router_serial_number_2, #id_router_serial_number_3, #id_router_serial_number_4, #id_router_serial_number_5
+{
+    width: 86%;
+}
+
+#router_serial_number_1_error, #router_serial_number_2_error, #router_serial_number_3_error, #router_serial_number_4_error, #router_serial_number_5_error
+{
+    width: 88%;
+}
+
 #pci-right-frame
 {
     width: 70%;
@@ -536,4 +603,35 @@ html,body
 {
     width: 90%;
     margin-bottom: 5%;
+}
+
+.tooltip
+{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext
+{
+    visibility: hidden;
+    width: 120px;
+    /* background-color: black; */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext
+{
+    visibility: visible;
 }

@@ -129,8 +129,8 @@ def generate_serial_numbers(device_type, modification_type, detail_type, place_o
     # current_time = str(datetime.datetime.now())[:-7].replace(' ', '_').replace(':', '-')
 
     serial_number = type_of_device + modification + detail + place + _y + _m
-    folder = f'qrcode-{detail_type}-{current_time}'
-    os.mkdir(f'QRcode/{device_type}/{modification_type}/{detail_type}/{folder}')
+    # folder = f'qrcode-{detail_type}-{current_time}'
+    # os.mkdir(f'QRcode/{device_type}/{modification_type}/{detail_type}/{folder}')
 
     serial_number_list = []
 
@@ -146,9 +146,9 @@ def generate_serial_numbers(device_type, modification_type, detail_type, place_o
         elif i >= 1000 and i < 10000:
             number = '' + str(i)
         _serial_number = serial_number + number
-        filename = f'QRcode/{device_type}/{modification_type}/{detail_type}/{folder}/{_serial_number}.png'
-        img = qrcode.make(_serial_number)
-        img.save(filename)
+        # filename = f'QRcode/{device_type}/{modification_type}/{detail_type}/{folder}/{_serial_number}.png'
+        # img = qrcode.make(_serial_number)
+        # img.save(filename)
         serial_number_list.append(_serial_number)
 
     fullname = f'serial_number_for_{modification_type}/{detail_type}({current_time})'
@@ -164,6 +164,7 @@ def generate_serial_numbers(device_type, modification_type, detail_type, place_o
         # browser = webbrowser.get('Firefox')
         # browser.open_new_tab(f'{file}')
 
+    """
     pdf = FPDF()
     dirname = f'QRcode/{device_type}/{modification_type}/{detail_type}/{folder}/'
     list_png = os.listdir(dirname)
@@ -186,4 +187,5 @@ def generate_serial_numbers(device_type, modification_type, detail_type, place_o
         pdf.write(1, txt=image_split)
 
     pdf.output(f'QRcode/{device_type}/{modification_type}/{detail_type}/{folder}/{folder}.pdf', 'F')
+    """
     # browser.open_new_tab(f'QRcode/{device_type}/{modification_type}/{detail_type}/{folder}/{folder}.pdf')
