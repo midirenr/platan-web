@@ -390,10 +390,9 @@ html,body
     width: 94%;
 }
 
-#info-input-container
+#board-input-container
 {
-    height: 30px;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 #input-container
