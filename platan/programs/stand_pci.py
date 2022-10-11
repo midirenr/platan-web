@@ -13,9 +13,10 @@ import telnetlib
 from telnetlib import Telnet
 from .docx_pdf_module import *
 import paramiko
+from .db_history import *
 
 
-def run(board_count, modification, board_serial_number_list):
+def run(board_count, modification, board_serial_number_list, host_ip):
     class CustomError(Exception):
         pass
 
@@ -66,6 +67,16 @@ def run(board_count, modification, board_serial_number_list):
                 break
         return yaml_file
 
+    def update_history_db(serial_number, msg):
+        """
+        Добавление в базу данных информации о статусе прохождении стенда
+        """
+        try:
+            insert_commit(serial_number, msg)
+        except:
+            create_table(serial_number)
+            insert_commit(serial_number, msg)
+
     def tcp_to_serial_bridge_restart(board_count):
         """
         Функция перезапускает tcp-to-serial мост
@@ -83,6 +94,39 @@ def run(board_count, modification, board_serial_number_list):
         logger_stend.info(f'Cервис tcp-to-serial-bridge-router{board_count} запущен', extra={'stend': f'{stend}'})
         output_file.write(f'Cервис tcp-to-serial-bridge-router{board_count} запущен\n')
         output_file.flush()
+
+    def tcp_to_serial_bridge_restart_ssh(board_count):
+        """
+        Функция перезапускает tcp-to-serial мост по ssh
+        :param dev_count: номер устройства, он же номер моста
+        :return: ничего
+        """
+        try:
+            host_config = {
+                'device_type': 'linux',
+                'host': host_ip,
+                'username': 'istok',
+                'password': 'istok',
+                'secret': 'istok',
+                'port': '22',
+            }
+            ssh = ConnectHandler(**host_config)
+            ssh.enable()
+            ssh.send_command('sudo systemctl restart tcp-to-serial-bridge-router1.service')
+            command_status = ssh.send_command('sudo systemctl status tcp-to-serial-bridge-router1.service')
+            if not 'active (running)' in command_status:
+                logger_stend.error(f'Не удается запустить сервис tcp-to-serial-bridge-router{board_count}, \
+                            выполнение программы невозможно', extra={'stend': f'{stend}'})
+                output_file.write(f'Не удается запустить сервис tcp-to-serial-bridge-router_ssh')
+                output_file.flush()
+            else:
+                logger_stend.info(f'Cервис tcp-to-serial-bridge-router{board_count} запущен',
+                                  extra={'stend': f'{stend}'})
+                output_file.write(f'Cервис tcp-to-serial-bridge-router{board_count} запущен\n')
+                output_file.flush()
+            ssh.disconnect()
+        except:
+            raise CustomError('Что пошло не так! Проверьте подключение')
 
     def host_service_check(service):
         """
@@ -105,6 +149,46 @@ def run(board_count, modification, board_serial_number_list):
             logger_stend.error(f'Ошибка при проверке состояния сервиса {service} \n %s' % traceback.format_exc(),
                                extra={'stend': f'{stend}'})
             sys.exit()
+
+    def host_service_check_ssh(service):
+        """
+        Проверка состояния сервисов на хосте. Если сервис не запущен, выполнение скрипта заканчивается
+        :param service: имя сервиса
+        :return: ничего
+        """
+        output_file.write('Проверка сервиса {}...\n'.format(service))
+        output_file.flush()
+        try:
+            host_config = {
+                'device_type': 'linux',
+                'host': host_ip,
+                'username': 'istok',
+                'password': 'istok',
+                'secret': 'istok',
+                'port': '22',
+            }
+            ssh = ConnectHandler(**host_config)
+            ssh.enable()
+            command_status = ssh.send_command('sudo systemctl status {service}.service')
+            if not 'active (running)' in command_status:
+                ssh.send_command(f"sudo systemctl restart {service}.service ")
+                command_status = ssh.send_command(f"sudo systemctl status {service}.service")
+                if not 'active (running)' in command_status:
+                    logger_stend.error(f'Сервис {service} не удается запустить, \
+                            выполнение программы невозможно', extra={'stend': f'{stend}'})
+                    output_file.write('Сервис не удается запустить\n'.format(service))
+                    output_file.flush()
+                else:
+                    logger_stend.info(f'Cервис {service} запущен', extra={'stend': f'{stend}'})
+                    output_file.write('Сервис {} запущен\n'.format(service))
+                    output_file.flush()
+            else:
+                logger_stend.info(f'Cервис {service} запущен', extra={'stend': f'{stend}'})
+                output_file.write('Сервис {} запущен\n'.format(service))
+                output_file.flush()
+            ssh.disconnect()
+        except:
+            raise CustomError('Что пошло не так! Проверьте подключение')
 
     def send_command(connect, command, sn, place, timeout=10, expect_string='#', just_wait=False):
         """
@@ -577,7 +661,7 @@ def run(board_count, modification, board_serial_number_list):
         device_num = str(device['port'])[2:]
         result = {f'device_num_{device_num}': {}}
         try:
-            with Telnet(device['ip'], device['port'], timeout=30) as connect:
+            with Telnet(host_ip, device['port'], timeout=30) as connect:
                 phase = 'install'
 
                 sn = board_serial_number_list[int(device_num) - 1]
@@ -804,7 +888,6 @@ def run(board_count, modification, board_serial_number_list):
         netplan_config_file = f'/etc/netplan/{netplan_config_name}'
         with open(netplan_config_file) as f:
             params_netplan = yaml.safe_load(f)
-        host_ip = params_netplan['network']['ethernets']['eth0']['addresses'][0].split('/')[0]
     except CustomError as e:
         logger_stend.error(e)
         sys.exit()
@@ -827,12 +910,12 @@ def run(board_count, modification, board_serial_number_list):
     output_file.flush()
     logger_stend.info('Включение tcp-to-serial мостов...', extra={'stend': f'{stend}'})
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
-        bridge_restart_result = executor.map(tcp_to_serial_bridge_restart, list(range(1, int(board_count) + 1)))
+        bridge_restart_result = executor.map(tcp_to_serial_bridge_restart_ssh, list(range(1, int(board_count) + 1)))
 
     # Проверка tftp сервиса
-    host_service_check('tftp')
+    host_service_check_ssh('tftp')
     # Проверка ftp сервиса
-    host_service_check('vsftp')
+    host_service_check_ssh('vsftp')
 
     # запуск инсталляции ПО и проверок
     result = {}
@@ -854,6 +937,7 @@ def run(board_count, modification, board_serial_number_list):
             output_file.flush()
             logger_script.error('Устройство закончило работу с неизвестной ошибкой',
                                 extra={'sn': f'{serial_num_board}', 'stend': f'{stend}', 'place': f'{place}'})
+            update_history_db(serial_num_board, 'СТЕНД_ПСИ, плата закончиала работу с неизвестной ошибкой!')
         elif 'Ошибка c устройством' in result[f'device_num_{dev_num}']['error']:
             error_string = result[f'device_num_{dev_num}']['error_details'][0][0]
             output_file.write(f'>>>Неуспех. ПО не было установлено/удалено: {error_string}<<<\n')
@@ -861,6 +945,8 @@ def run(board_count, modification, board_serial_number_list):
             error_code = result[f'device_num_{dev_num}']['error_details'][0][2]
             logger_script.error(f'Устройство закончило работу с ошибкой: {error_string}',
                                 extra={'sn': f'{serial_num_board}', 'stend': f'{stend}', 'place': f'{place}'})
+            update_history_db(serial_num_board, f'СТЕНД_ПСИ, плата закончиала работу с ошибкой {error_code}!')
+
         else:
             flash_result = result[f'device_num_{dev_num}']['flash_check_result'][1]
             losses = re.findall(r'\d+% packet loss', result[f'device_num_{dev_num}']['ping_result'])[0]
@@ -877,14 +963,35 @@ def run(board_count, modification, board_serial_number_list):
                     output_file.write(f'>>>ПСИ успешно пройдено<<< {dev_num}...\n')
                     output_file.flush()
                     update_date_time_pci(engine, serial_num_board)
+                    update_history_db(serial_num_board, f'СТЕНД_ПСИ, плата закончиала работу без ошибок!')
                     logger_script.info('Устройство закончило работу без ошибок!',
                                        extra={'sn': f'{serial_num_board}', 'stend': f'{stend}',
                                               'place': f'{place}'})
                 else:
+                    if ext_slot_out_result in ['Внешний HDD не найден',
+                                               'По крайней мере один порт NMC модуля не найден']:
+                        error_code = '009'
+                    elif flash_result == 'По крайней мере один flash накопитель не определился, возможно, USB порты неисправны':
+                        error_code = '090'
+                    elif losses == '100% packet loss':
+                        error_code = '900'
+                    elif ext_slot_out_result in ['Внешний HDD не найден',
+                                                 'По крайней мере один порт NMC модуля не найден'] and flash_result == 'По крайней мере один flash накопитель не определился, возможно, USB порты неисправны':
+                        error_code = '099'
+                    elif ext_slot_out_result in ['Внешний HDD не найден',
+                                                 'По крайней мере один порт NMC модуля не найден'] and losses == '100% packet loss':
+                        error_code = '909'
+                    elif flash_result == 'По крайней мере один flash накопитель не определился, возможно, USB порты неисправны' and losses == '100% packet loss':
+                        error_code = '990'
+                    elif ext_slot_out_result in ['Внешний HDD не найден',
+                                                 'По крайней мере один порт NMC модуля не найден'] and flash_result == 'По крайней мере один flash накопитель не определился, возможно, USB порты неисправны' and losses == '100% packet loss':
+                        error_code = '999'
+
                     output_file.write(f'>>>Неуспех. ПО было установлено, но при проверке АП возникли ошибки<<<\n')
                     output_file.write(f'Результат проверки слота расширения: {ext_slot_out_result}, {ext_slot_in_result}\n')
                     output_file.write(f'Результат проверки USB портов: {flash_result}\n')
                     output_file.write(f'Результат проверки Ethernet портов: {losses}\n')
+                    update_history_db(serial_num_board, f'СТЕНД_ПСИ, плата закончиала работу с ошибкой {error_code}!')
                     logger_script.error(
                         f'Устройство закончило работу с ошибками АП: {ext_slot_out_result}, {ext_slot_in_result}, {flash_result}, {losses}', extra={'sn': f'{serial_num_board}', 'stend': f'{stend}', 'place': f'{place}'})
             else:

@@ -1,0 +1,33 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+<title>Генерация серийных номеров</title>
+{% endblock %}
+
+{% block page_name %}<div align="center">История девайса</div>{% endblock %}
+
+{% block middle %}
+<form method="post" id="generateSerialNumbers" data-modifications-url="{% url 'ajax_load_modifications' %}">
+    {% csrf_token %}
+    <div class="generate-serial-numbers-label">Серийный номер</div>
+    {{ form.serial_number }}
+    <br>
+    <br>
+    <div class="generate-serial-numbers-label"><button type="submit" id="generate-serial-numbers-button" class="save btn btn-default" name="submit_btn">Поиск</button></div></form>
+    <br>
+<table border="1" width="80%">
+<caption>История</caption>
+    <br>
+    <tr>
+    <th>id</th>
+    <th>Сообщение</th>
+    <th>Дата/Время</th>
+    </tr>
+    <tr><td>id</td><td>Message</td><td>Дата/Время</td>
+    <tr><td>id</td><td>Message</td><td>Дата/Время</td>
+    <tr><td>id</td><td>Message</td><td>Дата/Время</td>
+    <tr><td>id</td><td>Message</td><td>Дата/Время</td>
+</table>
+{% endblock %}

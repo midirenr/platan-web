@@ -352,6 +352,11 @@ html,body
     margin-bottom: 2%;
 }
 
+#serial_number
+{
+    width: 80%;
+}
+
 #generate-serial-numbers-button
 {
     width: 100%;

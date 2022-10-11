@@ -9,6 +9,7 @@ urlpatterns = [
     path('stand-visual-inspection/', views.stand_visual_inspection_page, name='stand-visual-inspection'),
     path('stand-diagnostic/', views.stand_diagnostic_page, name='stand-diagnostic'),
     path('stand-pci/', views.stand_pci_page, name='stand-pci'),
+    path('history/', views.hisory_page, name='history'),
 
     # ajax
     path('ajax/load-modifications/', views.load_modifications, name='ajax_load_modifications'),

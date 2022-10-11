@@ -15,8 +15,10 @@ from .programs import stand_package
 from .programs import psql_chain_board_case
 from .programs import stand_visual_inspection
 from .programs.db_2000 import *
+from .programs.db_history import *
 from .programs import stand_diagnostic
 from .programs import stand_pci
+from .programs.get_host_ip import get_ip
 
 # Create your views here.
 
@@ -31,6 +33,17 @@ def index(request):
         },
     )
 
+def hisory_page(request):
+    form = HistoryForm()
+    if request.method == "POST" and 'submit_btn' in request.POST:
+        form = HistoryForm(data=request.POST)
+        serial_number = request.POST.get('serial_number')
+        history = get_history(serial_number)
+        """
+        Спросить у Сереги что возвращает get_history, релизовать распоковку и отправить в контекст! 
+        """
+        return render(request, 'history.html', context={'form': form})
+    return render(request, 'history.html', context={'form': form})
 
 @group_required('Техническое Бюро')
 def generate_serial_numbers_page(request):
@@ -201,7 +214,8 @@ def stand_diagnostic_page(request):
                                         form.cleaned_data['board_serial_number_4'],
                                         form.cleaned_data['board_serial_number_5']]
 
-            stand_diagnostic.run(board_count, modification, board_serial_number_list)
+            ip = get_ip(request)
+            stand_diagnostic.run(board_count, modification, board_serial_number_list, ip)
 
             return redirect('stand-diagnostic')
 
@@ -264,8 +278,8 @@ def stand_pci_page(request):
                                         form.cleaned_data['router_serial_number_3'],
                                         form.cleaned_data['router_serial_number_4'],
                                         form.cleaned_data['router_serial_number_5']]
-
-            stand_pci.run(router_count, modification, router_serial_number_list)
+            ip = get_ip(request)
+            stand_pci.run(router_count, modification, router_serial_number_list, ip)
 
             return redirect('stand-pci')
 

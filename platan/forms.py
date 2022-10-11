@@ -2,7 +2,25 @@ from django import forms
 from .models import DeviceType, ModificationType, GenerateSerialNumbers
 from django.core.exceptions import ValidationError
 from .programs.db_2000 import *
+from .programs.db_history import *
 
+
+class HistoryForm(forms.Form):
+    serial_number = forms.CharField(label='', max_length=14)
+    
+    def clean(self):
+        super(HistoryForm, self).clean()
+
+        serial_number = self.cleaned_data['serial_number']
+
+        if len(serial_number) != 14:
+            self.errors['serial_number'] = self.error_class(['Некорректный серийный номер'])
+            return self.cleaned_data
+
+        if not check_sn(engine, serial_number):
+            self.errors['device_serial_number'] = self.error_class([f'{serial_number} отсутствует в Базе Данных"'])
+            return self.cleaned_data
+        return self.cleaned_data
 
 class GenerateSerialNumbersForm(forms.ModelForm):
     """
