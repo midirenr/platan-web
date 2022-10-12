@@ -60,7 +60,7 @@ def print_sticker(serial_number, modification):
     r.add_picture(f'{qr_name}', width=Inches(.9), height=Inches(.9))
     doc.save(f'{input_docx}')
     os.remove(f'{qr_name}')
-    convert_docx_to_pdf_package(input_docx)
+    return convert_docx_to_pdf_package(input_docx)
 
 
 def convert_docx_to_pdf_package(input_docx):
@@ -91,7 +91,7 @@ def print_sticker_passport(serial_number):
     date_today = '{:%d-%m-%Y}'.format(date.today())
     input_docx_passport = f'{serial_number}-{date_today}-passport'
     document.write(input_docx_passport)
-    convert_docx_to_pdf_package(input_docx_passport)
+    return convert_docx_to_pdf_package(input_docx_passport)
 
 
 def convert_docx_to_pdf_passport(input_docx_passport):

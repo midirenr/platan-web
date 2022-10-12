@@ -38,11 +38,8 @@ def hisory_page(request):
     if request.method == "POST" and 'submit_btn' in request.POST:
         form = HistoryForm(data=request.POST)
         serial_number = request.POST.get('serial_number')
-        history = get_history(serial_number)
-        """
-        Спросить у Сереги что возвращает get_history, релизовать распоковку и отправить в контекст! 
-        """
-        return render(request, 'history.html', context={'form': form})
+        history = [(1, 'СТЕНД_ПСИ, плата закончиала работу с неизвестной ошибкой!','25-2-2022 14:23:54'), (2, 'СТЕНД_ПСИ, плата закончиала работу с ошибкой: 999','25-2-2022 15:55:21')]#get_history(serial_number)
+        return render(request, 'history.html', context={'history': history, 'form': form})
     return render(request, 'history.html', context={'form': form})
 
 @group_required('Техническое Бюро')
@@ -132,9 +129,9 @@ def stand_package_page(request):
 
         if form.is_valid():
             print('VALID')
-            stand_package.start_package_process(form.cleaned_data['device_serial_number'])
+            stickers = stand_package.start_package_process(form.cleaned_data['device_serial_number'])
 
-            return redirect('stand-package')
+            return render(request, 'stand-package', context=stickers)
 
     return render(
         request,

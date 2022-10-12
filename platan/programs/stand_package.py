@@ -22,5 +22,5 @@ def start_package_process(serial_number):
     modification = modification_dictionary.get(serial_number[2:4])
 
     update_date_time_package(engine, serial_number)
-    print_sticker(serial_number, modification)
-    print_sticker_passport(serial_number)
+    stickers = [print_sticker(serial_number, modification), print_sticker_passport(serial_number)]
+    return stickers

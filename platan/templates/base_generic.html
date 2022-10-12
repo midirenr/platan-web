@@ -76,6 +76,12 @@
                         {% else %}
                             <li><a href="{% url 'stand-package' %}">Стенд упаковки</a></li>
                         {% endif %}
+
+                        {% if request.path == '/history/' %}
+                            <li><a class="active" href="{% url 'history' %}">История девайса</a></li>
+                        {% else %}
+                            <li><a href="{% url 'history' %}">История девайса</a></li>
+                        {% endif %}
                     </ul>
                 </form>
             </div>

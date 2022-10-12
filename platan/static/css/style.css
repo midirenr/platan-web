@@ -385,6 +385,11 @@ html,body
     height: 100%;
 }
 
+#id_serial_number
+{
+    width: 40%;
+}
+
 #board-case-chain
 {
     width: 100%;
