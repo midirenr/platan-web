@@ -77,10 +77,12 @@
                             <li><a href="{% url 'stand-package' %}">Стенд упаковки</a></li>
                         {% endif %}
 
+                        {% if user.is_superuser %}
                         {% if request.path == '/history/' %}
                             <li><a class="active" href="{% url 'history' %}">История девайса</a></li>
                         {% else %}
                             <li><a href="{% url 'history' %}">История девайса</a></li>
+                        {% endif %}
                         {% endif %}
                     </ul>
                 </form>

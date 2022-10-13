@@ -11,29 +11,29 @@
 {% block middle %}
 <form method="post">
     {% csrf_token %}
-    <div align="center">Отсканируйте серийный номер платы</div>
-    <image width="25%" src="/images/board_1.jpg"></image>
-    <div id="board-serial-number-container">
+    <div align="center">Отсканируйте серийный номер платы
         <div align="center" class="tooltip">
-            <img class="info-image" align="center" src="/images/info.png" width="3%">
-            <span class="tooltiptext">
-                <img width="400" src="/images/board_1.jpg">
-            </span>
+        <img class="info-image" align="center" src="/images/info.png" width="3%">
+        <span class="tooltiptext">
+        <img class="frame" width="800%" src="/images/board_1.jpg">
+        </span>
         </div>
+    </div>
+    <div id="board-serial-number-container">
         {{ form.board_serial_number }}
         <div align="left" class="errors board-case-serial-number-error">
             {{ form.board_serial_number.errors.as_text }}
         </div>
     </div>
-    <div align="center">Отсканируйте скрийный номер корпуса</div>
-    <image width="30%" src="/images/sticker_1.jpg"></image>
-    <div id="case-serial-number-container">
+    <div align="center">Отсканируйте скрийный номер корпуса
         <div align="center" class="tooltip">
-            <img class="info-image" align="center" src="/images/info.png" width="3%">
-            <span class="tooltiptext">
-                <img width="400" src="/images/sticker_1.jpg">
-            </span>
+        <img class="info-image" align="center" src="/images/info.png" width="3%">
+        <span class="tooltiptext">
+        <img class="frame" width="800%" src="/images/sticker_1.jpg">
+        </span>
         </div>
+    </div>
+    <div id="case-serial-number-container">
         {{ form.case_serial_number }}
         <div align="left" class="errors board-case-serial-number-error">
             {{ form.case_serial_number.errors.as_text }}

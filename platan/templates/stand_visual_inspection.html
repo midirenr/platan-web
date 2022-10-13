@@ -11,15 +11,17 @@
 {% block middle %}
 <form method="post">
     {% csrf_token %}
-    <div align="center">Отсканируйте серийный номер платы</div>
-    <image width="25%" src="/images/board_1.jpg"></image>
-    <div id="board-input-container">
+    <div align="center">
+        Отсканируйте серийный номер платы
         <div align="right" class="tooltip">
-            <img class="info-image" align="center" src="/images/info.png" width="3%">
-            <span class="tooltiptext">
-                <img width="300" src="/images/board_1.jpg">
-            </span>
-        </div>
+        <img class="info-image" align="center" src="/images/info.png" width="3%">
+        <span class="tooltiptext">
+        <img class="frame" width="800%" src="/images/board_1.jpg">
+        </span>
+    </div>
+    </div>
+
+    <div id="board-input-container">
         <br>
         {{ form.board_serial_number }}
         <div align="left" class="errors board-case-serial-number-error">

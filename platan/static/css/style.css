@@ -6,6 +6,11 @@ html,body
     width: 99vw;
 }
 
+.frame
+{
+border: 3px solid #6767e1
+}
+
 .header-container
 {
     background: #543ae8 url(logo_istok_white.png) no-repeat 5%;
